@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# sojilearn.github.io
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+SojiLearn is an abbreviation of the Yoruba name 'Adesoji', meaning "the crown is revived". However, in everyday vernacular, it means to be knowledgeable about something or street smart. It is an imaginary TECH Startup that provides training in TECH skills, focused on reaching young people in the streets or remote areas.
+
+This website was built in a bid to dive deep into Full-Stack development using ReactJs and Laravel. ReactJS was used for the frontend, while Laravel was used for the backend. Everything on the frontend is provisioned dynamically from the backend database.
 
 ## Available Scripts
 
