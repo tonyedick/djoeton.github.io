@@ -84,7 +84,7 @@ class Footer extends Component {
 
               <Row>
                 <h5 className="text-center footerMore2">SojiLearn - Taking Learning to the Streets</h5>
-            </Row>
+              </Row>
 
           </Container>
       </Fragment>
