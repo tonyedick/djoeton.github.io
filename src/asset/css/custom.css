@@ -13,7 +13,7 @@
     background: rgb(0, 0, 0,0.7);
 }
 .topContent{
-    margin-top: 15em;
+    margin-top: 10em;
 }
 .topTitle{
     font-family: 'Montserrat', sans-serif;
@@ -177,13 +177,7 @@
 .iconProject{
     color: #ffffff;
     font-size: 40px;
-    margin-top:15%;
-}
-.circImg{
-    width: 150px;
-    height: 150px;
-    float:center;
-    margin-top: -10px;
+    margin-top:12%;
 }
 .coursesReadMore{
     color: #ffa500;
@@ -207,7 +201,7 @@
 .coursesCard{
     background: #ffffff;
     margin-bottom: 3em;
-    width: 22em;
+    width: 20em;
     border-radius: 0.6em;
     margin: 1em;
     cursor: pointer;
@@ -297,8 +291,8 @@
     font-weight: 700;
 }
 .aboutImg{
-    width:450px;
-    height:450px;
+    width:350px;
+    height:350px;
     background: #ffa500;
     border-radius:50%;
     display:flex;

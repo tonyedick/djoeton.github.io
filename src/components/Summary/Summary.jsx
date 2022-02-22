@@ -16,7 +16,7 @@ class Summary extends Component {
                 <div className="summaryBannerOverlay" >
                     <Container className="text=center">
                         <Row>
-                            <Col lg={8} md={6} sm={12}>
+                            <Col lg={12} md={6} sm={12}>
                                 <Row className="countSection">
                                     <Col>
                                         <FontAwesomeIcon className="iconProject" icon={faGlobe} />
@@ -60,11 +60,6 @@ class Summary extends Component {
                                         <h4 className="countTitle">Student Reviews </h4>
                                     </Col>
                                 </Row>
-                            </Col>
-
-                            
-                            <Col lg={4} md={6} sm={12}>
-                                        <img className="circImg" src={left} />
                             </Col>
 
                         </Row>

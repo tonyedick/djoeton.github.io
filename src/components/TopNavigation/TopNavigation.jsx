@@ -39,7 +39,7 @@ class TopNavigation extends Component {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
- 
+
     </Nav>
     <Nav>
       <Nav.Link className={this.state.navBarItem} href="#deets">ABOUT</Nav.Link>
