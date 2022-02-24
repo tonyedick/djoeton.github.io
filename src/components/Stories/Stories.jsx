@@ -9,6 +9,7 @@ class Stories extends Component {
   render() {
     return (
         <Fragment>
+
             <Container>
                 <h1 className="storiesMainTitle">SOJiLEARN TECHNOVATION</h1>
                     <div className="bottom"></div>

@@ -437,3 +437,52 @@ a.twitter{
     color: #ffa500;
     font-size: 40px;
 }
+.aboutMainPar{
+    color: #1b2a49;
+    margin-top: 3rem;
+    margin-bottom: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.aboutSignTitle{
+    font-family: 'Allura', cursive;
+    color: #0a1064;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 42px;
+    font-weight: 400;
+}
+.aboutSignDescription{
+    color: #1b2a49;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.aboutCard{
+    width: 100%;
+}
+.topAboutPage{
+    background-image: url("../image/original.jpg");
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topAboutPageOverlay{
+    position: absolute;
+    min-height: 450px;
+    width: 100%;
+    background: rgb(0, 0, 0,0.7);
+}
+.topAboutContentPage{
+    margin-top: 8em;
+}
+.topAboutPageTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffa500;
+    font-size: 28px;
+    margin-top: 3em;
+}
