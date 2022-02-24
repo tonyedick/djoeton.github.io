@@ -1,15 +1,14 @@
 import React from 'react'
-import Contact from './components/Contact/Contact';
-import ContactPage from './pages/ContactPage';
-import StoriesPage from './pages/StoriesPage';
+import {BrowserRouter} from 'react-router-dom'
+import AppRouter from './router/AppRouter';
+
 
 function App() {
   return (
-    <div>
-      
-      <StoriesPage />
-
-    </div>
+    
+    <BrowserRouter>
+    <AppRouter />
+    </BrowserRouter>
   );
 }
 

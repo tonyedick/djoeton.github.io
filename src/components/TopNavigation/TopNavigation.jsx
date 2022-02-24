@@ -4,6 +4,7 @@ import whiteLogo from '../../asset/image/logo_white.png';
 import blackLogo from '../../asset/image/logo_black.png';
 import '../../asset/css/custom.css';
 import '../../asset/css/bootstrap.min.css';
+import { NavLink } from "react-router-dom";
 
 class TopNavigation extends Component {
 
@@ -35,17 +36,18 @@ class TopNavigation extends Component {
 
 
 <Navbar className={this.state.navBarBack} collapseOnSelect fixed="top" expand="lg" variant={this.state.navVariant}>
-  <Navbar.Brand className={this.state.navBarTitle} href="#home"><img src={this.state.navBarLogo} /></Navbar.Brand>
+  <Navbar.Brand className={this.state.navBarTitle} href="/"><img src={this.state.navBarLogo} alt="logo" /></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
 
     </Nav>
     <Nav>
-      <Nav.Link className={this.state.navBarItem} href="#deets">ABOUT</Nav.Link>
-      <Nav.Link className={this.state.navBarItem} href="#deets">SCHOOLS</Nav.Link>
-      <Nav.Link className={this.state.navBarItem} href="#deets">STORIES</Nav.Link>
-      <Nav.Link className={this.state.navBarItem} href="#deets">CONTACT US</Nav.Link>
+      <Nav.Link><NavLink className={this.state.navBarItem} to="/">HOME</NavLink></Nav.Link>
+      <Nav.Link><NavLink className={this.state.navBarItem} to="/about">ABOUT</NavLink></Nav.Link>
+      <Nav.Link><NavLink className={this.state.navBarItem} to="/schools">SCHOOLS</NavLink></Nav.Link>
+      <Nav.Link><NavLink className={this.state.navBarItem} to="/stories">STORIES</NavLink></Nav.Link>
+      <Nav.Link><NavLink className={this.state.navBarItem} to="/contact">CONTACT US</NavLink></Nav.Link>
 
     </Nav>
   </Navbar.Collapse>
