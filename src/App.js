@@ -1,11 +1,13 @@
-import React from 'react';
-import AboutPage from './pages/AboutPage';
+import React from 'react'
+import Contact from './components/Contact/Contact';
+import ContactPage from './pages/ContactPage';
+import StoriesPage from './pages/StoriesPage';
 
 function App() {
   return (
     <div>
       
-      <AboutPage />
+      <StoriesPage />
 
     </div>
   );
