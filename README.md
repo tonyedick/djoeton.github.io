@@ -6,6 +6,8 @@ SojiLearn is an abbreviation of the Yoruba name 'Adesoji', meaning "the crown is
 
 This website was built in a bid to dive deep into Full-Stack development using ReactJs and Laravel. ReactJS was used for the frontend, while Laravel was used for the backend. Everything on the frontend is provisioned dynamically from the backend database.
 
+### For live demo https://xenodochial-mclean-962bee.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
