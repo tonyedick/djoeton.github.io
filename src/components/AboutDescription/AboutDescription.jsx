@@ -56,31 +56,25 @@ class AboutDescription extends Component {
                         <h1 className="storiesName">Our Mission</h1>
                         <hr />
                         <p className="storiesDescription">
-                        Since 2020, we have helped young people from over 100 remote 
-                        communities learn skills and develop capabilities to thrive in 
-                        their workplaces and also stay relevant for the Future of Work.<br></br><br></br>
+                        Our Mission is to help you get started on the career you want. <br></br><br></br>
 
-                        Today we have people (especially youths and undergrads) join our 
-                        virtual learning programs from all over 15 countries. .<br></br><br></br>
-
-                        With an ecosystem of over 9000 talents, access to a 200+ 
-                        faculty network, and robust curricula co-designed with business 
-                        leaders, we are the leading tech-ed company for emerging economies..<br></br>
+                        Whether you are fresh out of high school, seeking extra education, 
+                        or want to transition to a career in tech, We will give you the skills
+                         and insight to achieve the success you desire...<br></br>
                         </p>
 
                         <h1 className="storiesName">Our Vision</h1>
                         <hr />
+
                         <p className="storiesDescription">
-                        Since 2020, we have helped young people from over 100 remote 
-                        communities learn skills and develop capabilities to thrive in 
-                        their workplaces and also stay relevant for the Future of Work.<br></br><br></br>
+                        SojiLearn's vision is to empower one hundred thousand youths with
+                        digital skills training by the year 2025..<br></br><br></br>
 
-                        Today we have people (especially youths and undergrads) join our 
-                        virtual learning programs from all over 15 countries. .<br></br><br></br>
-
-                        With an ecosystem of over 9000 talents, access to a 200+ 
-                        faculty network, and robust curricula co-designed with business 
-                        leaders, we are the leading tech-ed company for emerging economies..<br></br>
+                        To do that, we need the help of people like you: passionate, 
+                        talented individuals who want to change the way education works.<br></br><br></br>
+                        
+                        If you have big ideas, and the drive
+                        to make them a reality, we want to hear from you.<br></br>
                         </p>
                     </Col>
                 </Row>
