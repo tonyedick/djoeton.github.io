@@ -10,7 +10,7 @@ class StoriesPage extends Component {
   render() {
     return (
       <Fragment>
-        <TopNavigation />
+        <TopNavigation title="Our Story" />
         <PageTop pagetitle="Our Story" />
         <AllStories />
         <br></br>

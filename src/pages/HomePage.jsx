@@ -16,7 +16,7 @@ class HomePage extends Component {
     return (
         <Fragment>
 
-            <TopNavigation />
+            <TopNavigation title="SojiLearn | Everything Technology skills Training"/>
             <TopBanner />
             <Stories />
             <Analysis />

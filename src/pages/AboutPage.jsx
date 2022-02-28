@@ -11,7 +11,7 @@ class AboutPage extends Component {
       
       <Fragment>
 
-          <TopNavigation />
+          <TopNavigation title="About Us"/>
           <AboutPageTop aboutpagetitle="Digital Transformation for Individuals and Businesses." />
           <AboutDescription />
           <Analysis />

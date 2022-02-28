@@ -8,14 +8,15 @@ import { NavLink } from "react-router-dom";
 
 class TopNavigation extends Component {
 
-    constructor(){
+    constructor(props){
         super();
         this.state={
             navBarTitle:"navTitle",
             navBarLogo: [whiteLogo], // object
             navVariant: "dark",
             navBarBack: "navBackground",
-            navBarItem: "navItem"
+            navBarItem: "navItem",
+            pageTitle:props.title
         }
     }
     onScroll=()=>{
@@ -33,6 +34,7 @@ class TopNavigation extends Component {
     return (
 
 <Fragment>
+<title>{this.state.pageTitle}</title>
 <Navbar className={this.state.navBarBack} collapseOnSelect fixed="top" expand="lg" variant={this.state.navVariant}>
   <Navbar.Brand className={this.state.navBarTitle} href="/"><img src={this.state.navBarLogo} alt="logo" /></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
