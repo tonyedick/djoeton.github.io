@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import bak from '../../asset/image/bak.webp';
+import React, { Component, Fragment } from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import bak from '../../asset/image/bak.webp'
 
 class AboutDescription extends Component {
   render() {

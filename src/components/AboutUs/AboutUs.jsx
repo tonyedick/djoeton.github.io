@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import face from '../../asset/image/face.png';
+import React, { Component, Fragment } from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import face from '../../asset/image/face.png'
 import { init } from 'ityped'
 
 class AboutUs extends Component {

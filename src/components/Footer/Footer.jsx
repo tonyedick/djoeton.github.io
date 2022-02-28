@@ -7,6 +7,7 @@ import {faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
 import whiteLogo from '../../asset/image/logo_white.png'
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
 
 class Footer extends Component {
   render() {
@@ -33,9 +34,9 @@ class Footer extends Component {
 
                   <Col lg={2} md={3} sm={12} className="p-5 text-justify">
                   <h2 className="footerName">COMPANY</h2>
-                  <a className="footerLink" href="#">About Us </a><br></br>
-                  <a className="footerLink" href="#">Career </a><br></br>
-                  <a className="footerLink" href="#">Contact Us </a><br></br>
+                  <Link className="footerLink" to="/about">About Us </Link><br></br>
+                  <Link className="footerLink" to="/careers">Career </Link><br></br>
+                  <Link className="footerLink" to="/contact">Contact Us </Link><br></br>
                   <a className="footerLink" href="#">Affiliate </a><br></br>
                   </Col>
                   
@@ -43,7 +44,7 @@ class Footer extends Component {
                   <h2 className="footerName">RESOURCES</h2>
                   <a className="footerLink" href="#">Blog </a><br></br>
                   <a className="footerLink" href="#">Events </a><br></br>
-                  <a className="footerLink" href="#">FAQs </a><br></br>
+                  <Link className="footerLink" to="/faq">FAQs </Link><br></br>
                   </Col>
 
                   <Col lg={2} md={3} sm={12} className="p-5 text-justify">
@@ -68,13 +69,13 @@ class Footer extends Component {
                         </div>
                   </Col>
                   <Col lg={2} md={6} sm={12} className="p-4 text-center copyrightLink footerMore">
-                    <a className="footerMore" href="#">Refund Policy </a>
+                    <Link className="footerMore" to="/refund">Refund Policy </Link>
                   </Col>
                   <Col lg={2} md={6} sm={12} className="p-4 text-center copyrightLink">
-                    <a className="footerMore" href="#">Terms and Condition </a>
+                    <Link className="footerMore" to="/termsandconditions">Terms and Condition </Link>
                   </Col>
                   <Col lg={2} md={6} sm={12} className="p-4 text-center copyrightLink">
-                    <a className="footerMore" href="#">Privacy Policy </a>
+                    <Link className="footerMore" to="/privacypolicy">Privacy Policy </Link>
                   </Col>
                   <Col lg={3} md={6} sm={12} className="p-4 text-center">
                     <a className="copyrightLink2" href="#"> (c) 2022 SojiLearn. All right Reserved</a>
