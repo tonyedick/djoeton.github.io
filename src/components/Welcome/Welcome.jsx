@@ -45,16 +45,15 @@ class Welcome extends Component {
                                             </Col>
                                         </Row>
 
-                                    </Container>   
-
+                                        
                                     <Row className="intro-footer bg-base text-center mt-5">
                                         <Col lg={4} md={6} sm={12}>
                                             <Row>
-                                                <Col lg={4} md={6} sm={12}>
+                                                <Col lg={6} md={6} sm={12}>
                                                 <img className="sideImg" src={imgone} />
                                                 </Col>
 
-                                                <Col lg={8} md={6} sm={12}>
+                                                <Col lg={6} md={6} sm={12}>
                                                 <h5 className="text-justify homeIntro">Introduction</h5>
                                                 <p className="text-justify">You can count on us to be your guide into a rewarding career in TECH.</p>
                                                 </Col>
@@ -63,11 +62,11 @@ class Welcome extends Component {
 
                                         <Col lg={4} md={6} sm={12}>
                                             <Row>
-                                                <Col lg={4} md={6} sm={12}>
+                                                <Col lg={6} md={6} sm={12}>
                                                 <img className="sideImg" src={imgtwo} />
                                                 </Col>
 
-                                                <Col lg={8} md={6} sm={12}>
+                                                <Col lg={6} md={6} sm={12}>
                                                 <h5 className="text-justify homeIntro">Certificate</h5>
                                                 <p className="text-justify">Ace your assessment and gain a globally recognised certificate.</p>
                                                 </Col>
@@ -76,11 +75,11 @@ class Welcome extends Component {
 
                                         <Col lg={4} md={6} sm={12}>
                                             <Row>
-                                                <Col lg={4} md={6} sm={12}>
+                                                <Col lg={6} md={6} sm={12}>
                                                 <img className="sideImg" src={imgthree} />
                                                 </Col>
 
-                                                <Col lg={8} md={6} sm={12}>
+                                                <Col lg={6} md={6} sm={12}>
                                                 <h5 className="text-justify homeIntro">Deep Dive</h5>
                                                 <p className="text-justify">Start creating solutions for complex business needs and problems.</p>
                                                 </Col>
@@ -88,7 +87,7 @@ class Welcome extends Component {
                                         </Col>
 
                                     </Row>
-                                    
+                                </Container>
 
                             </div>
                         </div>
