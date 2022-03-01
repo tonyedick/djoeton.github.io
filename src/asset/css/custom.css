@@ -68,7 +68,7 @@
 }
 .storiesMainTitle{
     color: #000221;
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 3em;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
@@ -488,7 +488,7 @@ a.twitter{
 }
 /* Styles for HomePage Top Intro Design */
 
-.top-intro-area{
+.top-intro--area{
     margin-top: -70px;
     position: relative;
     z-index: 2;
@@ -504,14 +504,37 @@ a.twitter{
     margin-bottom: 0;
 }
 .intro-area-inner{
-    box-shadow: 0 0  30px rgb(0 0 0 / 7%);
+    box-shadow: 0 0 30px rgb(0 0 0 / 7%);
     background: #fff;
     padding: 50px 0 0;
     border-radius: 8px;
 }
 .maintitle{
+    font-family: 'Allura', cursive;
+    font-weight: 700;
+    color: #000221;
+    font-size: 38px;
+}
+.intro-footer {
+    padding: 30px 30px 10px;
+    border-radius: 0 0 7px 7px;
+}
+.bg-base{
+    background: #ffa500;
+}
+.sideImg{
+    margin-top: -15px;
+}
+.homeIntro{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #000221;
-    font-size: 40px;
+    font-size: 16px;
+}
+.introName{
+    color: #000221;
+    margin-top: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
 }
