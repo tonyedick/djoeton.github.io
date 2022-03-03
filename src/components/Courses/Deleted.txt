@@ -1,9 +1,0 @@
-Previous images
-               UI/UX Designer        "https://media.istockphoto.com/photos/testing-software-picture-id1017296544?k=20&m=1017296544&s=612x612&w=0&h=I34gSez0j2HGciCztsZH09XiO142NLRmNIyFoJ-0U4M=" 
-
-               Android     https://media.istockphoto.com/photos/young-african-american-programmer-working-on-desktop-pc-in-the-office-picture-id1137939519?k=20&m=1137939519&s=612x612&w=0&h=wc3pwkFCKmSBac6Ux3YRsQq7gtwyMbD6rQWMKnWBzMM=
-               
-                 
-                                <img src="https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?w=740" />
-                                <img src="https://img.freepik.com/free-photo/shot-serious-african-american-student-makes-notes-making-research_273609-44493.jpg?w=740" />
-                            
