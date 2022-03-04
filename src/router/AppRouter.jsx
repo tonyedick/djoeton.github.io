@@ -7,10 +7,11 @@ import AllCoursePage from '../pages/AllCoursePage'
 import AboutPage from '../pages/AboutPage'
 import ContactPage from '../pages/ContactPage'
 import RefundPage from '../pages/RefundPage'
-import TCPage from '../pages/TCPage';
-import PrivacyPolicyPage from '../pages/PrivacyPolicyPage';
-import CareersPage from '../pages/CareersPage';
-import FaqPage from '../pages/FaqPage';
+import TCPage from '../pages/TCPage'
+import PrivacyPolicyPage from '../pages/PrivacyPolicyPage'
+import CareersPage from '../pages/CareersPage'
+import FaqPage from '../pages/FaqPage'
+import CoursesPathPage from '../pages/CoursesPathPage'
 
 class AppRouter extends Component {
   render() {
@@ -27,6 +28,7 @@ class AppRouter extends Component {
             <Route exact path="/privacypolicy" element={<PrivacyPolicyPage />} />
             <Route exact path="/careers" element={<CareersPage />} />
             <Route exact path="/faq" element={<FaqPage />} />
+            <Route exact path="/coursepath" element={<CoursesPathPage />} />
         </Routes>
       </Fragment>
     )
