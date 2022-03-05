@@ -1,5 +1,6 @@
-import React, { Component, Fragment } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import React, { Component, Fragment } from 'react'
+import { Card, Col, Container, Row } from 'react-bootstrap'
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
 
 class Courses extends Component {
   render() {
@@ -18,7 +19,7 @@ class Courses extends Component {
                             Our instructor-led and hands-on training model helps you learn a combination of the 
                             art and science of tech product design with emphasis on solving business cases.
                             </Card.Text>
-                            <p className="coursesReadMore"><a href="/coursepath">Read more..</a></p>
+                            <p className="coursesReadMore"><Link to="/coursepath">Read more..</Link></p>
                         </Card.Body>
                         </Card>
                     </Col>
@@ -33,7 +34,7 @@ class Courses extends Component {
                             This course helps you accelerate your career into Mobile Application Development and gives you
                             handson experience in solving business needs. Demo Content!
                             </Card.Text>
-                            <p className="coursesReadMore"><a href="/coursepath">Read more..</a></p>
+                            <p className="coursesReadMore"><Link to="/coursepath">Read more..</Link></p>
                         </Card.Body>
                         </Card>
                     </Col>
@@ -47,7 +48,7 @@ class Courses extends Component {
                             Let us help you kick start your Tech career from the basics of programming with a focus on
                             Advanced Data Structures and Algorithm with emphasis on solving business cases.
                             </Card.Text>
-                            <p className="coursesReadMore"><a href="/coursepath">Read more..</a></p>
+                            <p className="coursesReadMore"><Link to="/coursepath">Read more..</Link></p>
                         </Card.Body>
                         </Card>
                 
@@ -62,7 +63,7 @@ class Courses extends Component {
                             Our instructor-led and hands-on training model helps you learn a combination of the 
                             art and science of tech product design with emphasis on solving business cases.
                             </Card.Text>
-                            <p className="coursesReadMore"><a href="/coursepath">Read more..</a></p>
+                            <p className="coursesReadMore"><Link href="/coursepath">Read more..</Link></p>
                         </Card.Body>
                         </Card>
                     </Col>
@@ -76,7 +77,7 @@ class Courses extends Component {
                             Learn to developer your vocabulary and writing skills. Get trained by experts
                             and leverage on new skills to become a skilled problem solver. Demo Content! Demo Content!
                             </Card.Text>
-                            <p className="coursesReadMore"><a to="/coursepath">Read more..</a></p>
+                            <p className="coursesReadMore"><Link to="/coursepath">Read more..</Link></p>
                         </Card.Body>
                         </Card>
                     </Col>
@@ -90,7 +91,7 @@ class Courses extends Component {
                             Develop skills to create, manage advertising campaigns in social media & evaluate results.
                             Learn how to build a strong social media presence for companies.
                             </Card.Text>
-                            <p className="coursesReadMore"><a href="/coursepath">Read more..</a></p>
+                            <p className="coursesReadMore"><Link to="/coursepath">Read more..</Link></p>
                         </Card.Body>
                         </Card>
                 
