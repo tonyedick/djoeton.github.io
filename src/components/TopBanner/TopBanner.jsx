@@ -1,11 +1,12 @@
 import React, { Component, Fragment } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { init } from 'ityped'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 
 class TopBanner extends Component {
     componentDidMount(){
         const myElement = document.querySelector('#myTopBanner')
-        init(myElement, { showCursor: false, strings: ['From the Streets', 'To Silicon Valley' ] })
+        init(myElement, { showCursor: false, strings: ['the Streets' ] })
       }
   render() {
     return (
@@ -16,10 +17,15 @@ class TopBanner extends Component {
                     <Row>
                         <Col className="text-center">
                         <h2 className="topTitle">Building Tech Talents</h2>
-                        <h2 className="topTitle"><span id="myTopBanner"></span></h2>
+                        <h2 className="topTitle">From <span id="myTopBanner"></span></h2>
                         <p className="topSubTitle">One Platform That Helps You Learn Tech<br /> 
                         and Helps Companies Hire You Fast</p>
-                        <Button variant="warning" size="lg">Get Started</Button>
+                        <button className="button" type="button" variant="warning" size="lg" onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href="/coursepath";
+                            }
+                        }
+                        >Get Started</button>
                         </Col>
                     </Row>
 

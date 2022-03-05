@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 
 class Courses extends Component {
   render() {
@@ -63,7 +63,7 @@ class Courses extends Component {
                             Our instructor-led and hands-on training model helps you learn a combination of the 
                             art and science of tech product design with emphasis on solving business cases.
                             </Card.Text>
-                            <p className="coursesReadMore"><Link href="/coursepath">Read more..</Link></p>
+                            <p className="coursesReadMore"><Link to="/coursepath">Read more..</Link></p>
                         </Card.Body>
                         </Card>
                     </Col>

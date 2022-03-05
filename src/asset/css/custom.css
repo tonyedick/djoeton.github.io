@@ -12,6 +12,12 @@
     width: 100%;
     background: rgb(0, 0, 0,0.7);
 }
+.button {
+    width: 100px;
+    height: 40px;
+    background: #ffa500;
+    cursor: pointer;
+}
 .topContent{
     margin-top: 10em;
 }
@@ -538,3 +544,33 @@ a.twitter{
     font-size: 18px;
     font-weight: 700;
 }
+.about-thumb-wrap.after-shape {
+     margin-right: 30px;
+}
+ .about-thumb-wrap.after-shape:after {
+     content: "";
+     position: absolute;
+     right: -30px;
+     width: 154px;
+     height: 80%;
+     top: 50%;
+     border-radius: 10px;
+     background: #ffa500;
+     z-index: -1;
+     transform: translateY(-50%);
+ }
+ .course-paths{
+      margin-left: 35px;
+ }
+ .coursePathsText{
+     font-family: 'Montserrat',sans-serif;
+     font-weight: 700;
+     color: #051b35;
+     font-size: 40px;
+ }
+ .pathName{
+     color: #051b35;
+     font-family: 'Raleway',sans-serif;
+     font-size: 15px;
+     font-weight: 600;
+ } 
