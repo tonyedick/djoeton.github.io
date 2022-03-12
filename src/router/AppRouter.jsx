@@ -23,11 +23,14 @@ class AppRouter extends Component {
             <Route exact path="/schools" element={<AllCoursePage />} />
             <Route exact path="/about" element={<AboutPage />} />
             <Route exact path="/contact" element={<ContactPage />} />
+
             <Route exact path="/refund" element={<RefundPage />} />
             <Route exact path="/termsandconditions" element={<TCPage />} />
             <Route exact path="/privacypolicy" element={<PrivacyPolicyPage />} />
+            
             <Route exact path="/careers" element={<CareersPage />} />
             <Route exact path="/faq" element={<FaqPage />} />
+            
             <Route exact path="/coursepath" element={<CoursesPathPage />} />
         </Routes>
       </Fragment>

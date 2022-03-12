@@ -10,7 +10,7 @@
     position: absolute;
     min-height: 550px;
     width: 100%;
-    background: rgb(0, 0, 0,0.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 .topContent{
     margin-top: 10em;
@@ -538,29 +538,29 @@ a.twitter{
     font-size: 18px;
     font-weight: 700;
 }
-.about-thumb-wrap.after-shape {
-     margin-right: 30px;
+.about-thumb-wrap.after-shape{
+    margin-right: 30px;
 }
- .about-thumb-wrap.after-shape:after {
-     content: "";
-     position: absolute;
-     right: -30px;
-     width: 154px;
-     height: 80%;
-     top: 50%;
-     border-radius: 10px;
-     background: #ffa500;
-     z-index: -1;
-     transform: translateY(-50%);
- }
+.about-thumb-wrap.after-shape:after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    width: 154px;
+    height: 70%;
+    top: 57%;
+    border-radius: 10px;
+    background: #ffa500;
+    z-index: -1;
+    transform: translateX(-440%);
+}
  .course-paths{
-      margin-left: 35px;
+      margin-left: 30px;
  }
  .coursePathsText{
      font-family: 'Montserrat',sans-serif;
      font-weight: 700;
      color: #051b35;
-     font-size: 40px;
+     font-size: 36px;
  }
  .pathName{
      color: #051b35;
@@ -568,3 +568,6 @@ a.twitter{
      font-size: 15px;
      font-weight: 600;
  } 
+ .aboutPathImg{
+    width:100%;
+}

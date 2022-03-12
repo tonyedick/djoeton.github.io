@@ -9,8 +9,8 @@ class CoursesPathPage extends Component {
     return (
         
         <Fragment>
-            <TopNavigation title="Choose Your Path" />
-            <PageTop pagetitle="Courses Path"/>
+            <TopNavigation title="Choose a Path" />
+            <PageTop pagetitle="Course a Path"/>
             <CoursesPathDetails />
             <Footer />
         </Fragment>
