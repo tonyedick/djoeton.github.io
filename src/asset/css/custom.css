@@ -12,12 +12,6 @@
     width: 100%;
     background: rgb(0, 0, 0,0.7);
 }
-.button {
-    width: 100px;
-    height: 40px;
-    background: #ffa500;
-    cursor: pointer;
-}
 .topContent{
     margin-top: 10em;
 }
