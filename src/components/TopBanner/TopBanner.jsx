@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { init } from 'ityped'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 
@@ -20,12 +20,12 @@ class TopBanner extends Component {
                         <h2 className="topTitle">From <span id="myTopBanner"></span></h2>
                         <p className="topSubTitle">One Platform That Helps You Learn Tech<br /> 
                         and Helps Companies Hire You Fast</p>
-                        <button className="button" type="button" variant="warning" size="lg" onClick={(e) => {
+                        <Link className="button" type="button" variant="warning" size="lg" onClick={(e) => {
                             e.preventDefault();
-                            window.location.href="/coursepath";
+                            window.location.to="/coursepath";
                             }
                         }
-                        >Get Started</button>
+                        >Get Started</Link>
                         </Col>
                     </Row>
 
