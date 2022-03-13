@@ -19,7 +19,7 @@ class CoursesPathDetails extends Component {
 
                                 <Col lg={6} md={6} sm={12} className="mt-5">
                                     <div className="course-paths">
-                                        <h1 className="coursePathsText">Become a Professional UI/UX Designer.</h1>  
+                                        <h1 className="coursePathsText">Become a Professional Content Writer.</h1>  
                                         <p className="pathName">This is your first step to becoming a professional UI/UX designer. Get industry experience when you learn from Top UI/UX Professionals in the industry alongside students from over 150 countries.</p> 
                                         <p className="pathName">Join fellow students like you and kick start your career in the Top 10% Career Jobs of the Future, when you register with SojiLearn. Course Modules:</p>
 
@@ -42,6 +42,16 @@ class CoursesPathDetails extends Component {
                                 </Col>
 
 
+                        </Row>
+                        
+                        <Row>
+                                <Col lg={8} md={6} sm={12}>
+                                    <h1>Course Details</h1>
+                                </Col>
+
+                                <Col lg={4} md={6} sm={12}>
+                                    <h1>Course Details</h1>
+                                </Col>
                         </Row>
                    </Container>
                 </Fragment>

@@ -11,7 +11,12 @@ import TCPage from '../pages/TCPage'
 import PrivacyPolicyPage from '../pages/PrivacyPolicyPage'
 import CareersPage from '../pages/CareersPage'
 import FaqPage from '../pages/FaqPage'
-import CoursesPathPage from '../pages/CoursesPathPage'
+import CoursesPathPageUI from '../pages/CoursesPathPageUI'
+import CoursesPathPageAndroid from '../pages/CoursesPathPageAndroid'
+import CoursesPathPageDev from '../pages/CoursesPathPageDev'
+import CoursesPathPageProd from '../pages/CoursesPathPageProd'
+import CoursesPathPageContent from '../pages/CoursesPathPageContent'
+import CoursesPathPageDigital from '../pages/CoursesPathPageDigital'
 
 class AppRouter extends Component {
   render() {
@@ -31,7 +36,12 @@ class AppRouter extends Component {
             <Route exact path="/careers" element={<CareersPage />} />
             <Route exact path="/faq" element={<FaqPage />} />
             
-            <Route exact path="/coursepath" element={<CoursesPathPage />} />
+            <Route exact path="/coursepathui" element={<CoursesPathPageUI />} />
+            <Route exact path="/coursepathandroid" element={<CoursesPathPageAndroid />} />
+            <Route exact path="/coursepathdev" element={<CoursesPathPageDev />} />
+            <Route exact path="/coursepathprod" element={<CoursesPathPageProd />} />
+            <Route exact path="/coursepathcontent" element={<CoursesPathPageContent />} />
+            <Route exact path="/coursepathdigital" element={<CoursesPathPageDigital />} />
         </Routes>
       </Fragment>
     )

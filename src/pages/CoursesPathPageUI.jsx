@@ -2,16 +2,16 @@ import React, { Component, Fragment } from 'react'
 import Footer from '../components/Footer/Footer'
 import PageTop from '../components/PageTop/PageTop'
 import TopNavigation from '../components/TopNavigation/TopNavigation'
-import CoursesPathDetails from '../components/CoursesPathDetails/CoursesPathDetails'
+import CoursesPathDetailsUI from '../components/CoursesPathDetails/CoursesPathDetailsUI'
 
 class CoursesPathPage extends Component {
   render() {
     return (
         
         <Fragment>
-            <TopNavigation title="Choose a Path" />
-            <PageTop pagetitle="Course a Path"/>
-            <CoursesPathDetails />
+            <TopNavigation title="UI/UX Design School" />
+            <PageTop pagetitle="Become a Top-Chased-After UI/UX Designer"/>
+            <CoursesPathDetailsUI />
             <Footer />
         </Fragment>
     )
