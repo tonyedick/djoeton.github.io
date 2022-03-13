@@ -17,6 +17,7 @@ import CoursesPathPageDev from '../pages/CoursesPathPageDev'
 import CoursesPathPageProd from '../pages/CoursesPathPageProd'
 import CoursesPathPageContent from '../pages/CoursesPathPageContent'
 import CoursesPathPageDigital from '../pages/CoursesPathPageDigital'
+import CoursesPathPageData from '../pages/CoursesPathPageData'
 
 class AppRouter extends Component {
   render() {
@@ -42,6 +43,7 @@ class AppRouter extends Component {
             <Route exact path="/coursepathprod" element={<CoursesPathPageProd />} />
             <Route exact path="/coursepathcontent" element={<CoursesPathPageContent />} />
             <Route exact path="/coursepathdigital" element={<CoursesPathPageDigital />} />
+            <Route exact path="/coursepathdata" element={<CoursesPathPageData />} />
         </Routes>
       </Fragment>
     )
