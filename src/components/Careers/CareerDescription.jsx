@@ -6,7 +6,7 @@ import { init } from 'ityped'
 class CareerDescription extends Component {
   componentDidMount(){
     const myHire = document.querySelector('#myHire')
-    init(myHire, { showCursor: false, strings: ['Not Hiring Right Now!', 'Pls, Check Back Later!' ] })
+    init(myHire, { showCursor: false, strings: ['Not Hiring Right Now!' ] })
   }
 
   render() {
