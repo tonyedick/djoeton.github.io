@@ -11,7 +11,7 @@ import {faTags} from '@fortawesome/free-solid-svg-icons'
 import 'video-react/dist/video-react.css'
 import { Player, BigPlayButton } from 'video-react'
 
-class CoursesPathDetails extends Component {
+class CoursesPathDetailsAndroid extends Component {
         render() {
             return(
                 <Fragment>
@@ -105,4 +105,4 @@ class CoursesPathDetails extends Component {
         }
 }
 
-export default CoursesPathDetails
+export default CoursesPathDetailsAndroid

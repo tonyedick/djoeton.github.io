@@ -1,64 +1,109 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component, Fragment } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import pathDetails from '../../asset/image/cpath.png';
+import { Col, Container, Row, Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCheckSquare} from '@fortawesome/free-solid-svg-icons'
+import {faUser} from '@fortawesome/free-solid-svg-icons'
+import {faClock} from '@fortawesome/free-solid-svg-icons'
+import {faClipboard} from '@fortawesome/free-solid-svg-icons'
+import {faClone} from '@fortawesome/free-solid-svg-icons'
+import {faTags} from '@fortawesome/free-solid-svg-icons'
+import 'video-react/dist/video-react.css'
+import { Player, BigPlayButton } from 'video-react'
 
-class CoursesPathDetails extends Component {
+class CoursesPathDetailsDeve extends Component {
         render() {
             return(
                 <Fragment>
                    <Container className="mt-5">
-                        <Row>
-                                <Col lg={6} md={6} sm={12}>
-                                    <div className="about-thumb-wrap after-shape">
-                                        <img className="aboutPathImg" src={pathDetails} alt="Students in school"/>
-                                    </div>
-                                </Col>
-
-
-                                <Col lg={6} md={6} sm={12} className="mt-5">
-                                    <div className="course-paths">
-                                        <h1 className="coursePathsText">Become a Professional Software Developer.</h1>  
-                                        <p className="pathName">This is your first step to becoming a professional Software Developer. Get industry experience when you learn from Top Developers in the industry alongside students from over 150 countries.</p> 
-                                        <p className="pathName">Join fellow students like you and kick start your career in the Top 10% Career Jobs of the Future, when you register with SojiLearn. Course Modules:</p>
-
-                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Introduction to Programming </p>
-
-                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Getting the Right Tools</p>
-
-                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Software Development Life Cyle</p>
-
-                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Frontend Development </p>
-
-                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Backend Development </p>
-
-                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Introduction to Git </p>
-
-                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Assessment </p>
-
-
-
-                                    </div>
-
-                                </Col>
-
-
-                        </Row>
-                        
-                        <Row>
-                                <Col lg={8} md={6} sm={12}>
-                                    <h1>Course Details</h1>
+                   <Row>
+                                <Col lg={8} md={6} sm={12}>     
+                                    <h1 className="coursePathsText">Become a Professional Software Developer.</h1>
+                                    <img className="androidDetaisImg" src="https://solverwp.com/demo/html/edumint/assets/img/course/9.png" alt=""/>
+                                    <br></br> <br></br>
+                                    <p className="CoruseallDescription">This is your first step to becoming a professional Software Developer. Get industry experience when you learn from Top Developers in the industry alongside students from over 150 countries.</p>
                                 </Col>
 
                                 <Col lg={4} md={6} sm={12}>
-                                    <h1>Course Details</h1>
+                                        <div className="widget_feature">
+                                        <h4 className="widget-title text-center">Features</h4>
+                                                <hr />
+                                                    <ul>
+                                                    <li><FontAwesomeIcon className="iconBullent" icon={faUser} /> <span> Enrolled :</span> 1200 students</li>
+
+                                                    <li><FontAwesomeIcon className="iconBullent" icon={faClock} /> <span>Duration :</span> 2 hours</li>
+
+                                                    <li><FontAwesomeIcon className="iconBullent" icon={faClipboard} /> <span>Lectures :</span> 8</li>
+
+                                                    <li><FontAwesomeIcon className="iconBullent" icon={faClone} /> <span>Categories:</span> Technology</li>
+
+                                                    <li><FontAwesomeIcon className="iconBullent" icon={faTags} /> <span>Tags:</span> Android, JavaScript, Programming, Kotlin</li>
+
+                                                    <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> <span>Instructor:</span> Kazi Ariyan</li>
+
+                                                    </ul>
+                                            <div class="price-wrap text-center">
+                                            <h5>Price:<span>$54.00</span></h5>
+                                            <Button variant="primary">ENROLL COURSE</Button>
+                                            </div>
+                                            </div> 
+                              
                                 </Col>
                         </Row>
+                        
+                        <Row>
+                            <Col className="mt-5" lg={8} md={6} sm={12}>
+                                <div>
+                                    <h1 className="androidDetailsText">Requirements</h1>
+                                    <p className="pathName">This is your first step to becoming a professional COntent Writer. Get industry experience when you learn from Top Professionals in the industry alongside students from over 150 countries.</p>
+                                    <hr />
+                                    <ul>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
+                                        
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Ligula cur maecenas</li>
+
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
+
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Ligula cur maecenass</li>
+
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
+
+                                    </ul>
+                                    <p className="pathName">Lesson Modules Includes:</p>
+                                    <ul>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Introduction to Programming</li>
+                                        
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Getting the Right Tools</li>
+
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Software Development Life Cyle</li>
+
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Frontend Development</li>
+
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Backend Development</li>
+
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Introduction to Git</li>
+
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Assessment</li>
+
+                                    </ul>
+
+                                </div>
+                            </Col>
+
+                            <Col lg={4} md={6} sm={12}>
+                                    <h4 className="widget-title text-center">Watch a Demo</h4>
+                                            <Player src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4">
+                                            <BigPlayButton position="center" />
+                                            </Player>
+                            </Col>
+
+                           
+                        </Row>
+
                    </Container>
                 </Fragment>
             )
         }
 }
 
-export default CoursesPathDetails
+export default CoursesPathDetailsDeve
