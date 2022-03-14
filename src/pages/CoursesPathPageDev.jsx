@@ -5,12 +5,15 @@ import TopNavigation from '../components/TopNavigation/TopNavigation'
 import CoursesPathDetailsDev from '../components/CoursesPathDetails/CoursesPathDetailsDev'
 
 class CoursesPathPage extends Component {
+  componentDidMount(){
+    window.scroll(0,0)
+}
   render() {
     return (
         
         <Fragment>
             <TopNavigation title="Software Development Academy" />
-            <PageTop pagetitle="Become a Software Developer"/>
+            <PageTop pagetitle="Software Development"/>
             <CoursesPathDetailsDev />
             <Footer />
         </Fragment>

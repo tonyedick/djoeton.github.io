@@ -5,12 +5,15 @@ import TopNavigation from '../components/TopNavigation/TopNavigation'
 import CoursesPathDetailsProd from '../components/CoursesPathDetails/CoursesPathDetailsProd'
 
 class CoursesPathPage extends Component {
+  componentDidMount(){
+    window.scroll(0,0)
+}
   render() {
     return (
         
         <Fragment>
             <TopNavigation title="Product Design School" />
-            <PageTop pagetitle="Your Path to Become a Product Designer"/>
+            <PageTop pagetitle="Product Design"/>
             <CoursesPathDetailsProd />
             <Footer />
         </Fragment>

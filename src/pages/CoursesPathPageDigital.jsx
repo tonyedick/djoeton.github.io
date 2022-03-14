@@ -5,12 +5,15 @@ import TopNavigation from '../components/TopNavigation/TopNavigation'
 import CoursesPathDetailsDigital from '../components/CoursesPathDetails/CoursesPathDetailsDigital'
 
 class CoursesPathPage extends Component {
+  componentDidMount(){
+    window.scroll(0,0)
+}
   render() {
     return (
         
         <Fragment>
             <TopNavigation title="Social Media Marketing Academy" />
-            <PageTop pagetitle="Become a Digital Marketer"/>
+            <PageTop pagetitle="Digital Marketing"/>
             <CoursesPathDetailsDigital />
             <Footer />
         </Fragment>

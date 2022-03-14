@@ -538,21 +538,6 @@ a.twitter{
     font-size: 18px;
     font-weight: 700;
 }
-.about-thumb-wrap.after-shape{
-    margin-right: 30px;
-}
-.about-thumb-wrap.after-shape:after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    width: 154px;
-    height: 70%;
-    top: 57%;
-    border-radius: 10px;
-    background: #ffa500;
-    z-index: -1;
-    transform: translateX(-440%);
-}
  .course-paths{
       margin-left: 30px;
  }
@@ -560,7 +545,7 @@ a.twitter{
      font-family: 'Montserrat',sans-serif;
      font-weight: 700;
      color: #051b35;
-     font-size: 36px;
+     font-size: 26px;
  }
  .pathName{
      color: #051b35;
@@ -571,3 +556,50 @@ a.twitter{
  .aboutPathImg{
     width:100%;
 }
+ /* /// Android Path Details  */
+
+ .androidDetailsText{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    color: #000221;
+    font-size: 35px;
+}
+.androidDetaisImg{
+    width: 100%;
+}
+.CoruseallDescription{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    color: #000221;
+    font-size: 15px;
+}
+.widget_feature {
+    border: 1px solid #cbd6e2;
+}
+.widget_feature ul {
+    padding: 0 25px 20px;
+}
+.widget_feature ul li {
+    color: #000221;
+    font-size: 16px;
+    margin-bottom: 9px;
+    list-style: none;
+}
+.widget_feature ul li span {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    color: #000221;
+    margin-right: 5px;
+}
+.widget_feature .price-wrap {
+    background-color: #ffa500;
+    padding: 34px 23px 40px;
+}
+.widget-title{
+     margin-top: 20px;
+     margin-bottom: 20px;
+     font-family: 'Montserrat',sans-serif;
+     font-weight: 700;
+     font-size: 22px;
+     position: relative;
+} 

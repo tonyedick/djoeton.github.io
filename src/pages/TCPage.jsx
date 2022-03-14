@@ -6,6 +6,9 @@ import TopNavigation from '../components/TopNavigation/TopNavigation'
 
 
 export class TCPage extends Component {
+  componentDidMount(){
+    window.scroll(0,0)
+}
   render() {
     return (
       <Fragment>

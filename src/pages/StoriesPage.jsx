@@ -7,6 +7,9 @@ import Contact from '../components/Contact/Contact'
 import Summary from '../components/Summary/Summary'
 
 class StoriesPage extends Component {
+  componentDidMount(){
+    window.scroll(0,0)
+}
   render() {
     return (
       <Fragment>

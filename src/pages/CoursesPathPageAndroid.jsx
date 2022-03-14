@@ -5,12 +5,15 @@ import TopNavigation from '../components/TopNavigation/TopNavigation'
 import CoursesPathDetailsAndroid from '../components/CoursesPathDetails/CoursesPathDetailsAndroid'
 
 class CoursesPathPage extends Component {
+  componentDidMount(){
+    window.scroll(0,0)
+}
   render() {
     return (
         
         <Fragment>
             <TopNavigation title="Android Development School" />
-            <PageTop pagetitle="Become an Android Developer"/>
+            <PageTop pagetitle="Android Development"/>
             <CoursesPathDetailsAndroid />
             <Footer />
         </Fragment>

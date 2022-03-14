@@ -114,7 +114,7 @@ class AllCourses extends Component {
                                 <h5 className="text-justify storiesName">Digital Marketing</h5>
                                 <p className="text-justify storiesDescription">With this starter course, you will learn the foundational concepts
                                     used to build simple static websites.</p>
-                                    <Link className="modulesViewMore float-left" to="/coursepath" >View Details</Link>
+                                    <Link className="modulesViewMore float-left" to="/coursepathdigital" >View Details</Link>
                               </Col>
 
                             <Col lg={6} md={6} sm={12} className="p-2">

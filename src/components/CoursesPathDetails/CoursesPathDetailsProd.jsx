@@ -20,18 +20,18 @@ class CoursesPathDetails extends Component {
                                 <Col lg={6} md={6} sm={12} className="mt-5">
                                     <div className="course-paths">
                                         <h1 className="coursePathsText">Become a Professional Product Designer.</h1>  
-                                        <p className="pathName">This is your first step to becoming a professional UI/UX designer. Get industry experience when you learn from Top UI/UX Professionals in the industry alongside students from over 150 countries.</p> 
+                                        <p className="pathName">This is your first step to becoming a professional Product Designer. Get industry experience when you learn from Top Product Designers in the industry alongside students from over 150 countries.</p> 
                                         <p className="pathName">Join fellow students like you and kick start your career in the Top 10% Career Jobs of the Future, when you register with SojiLearn. Course Modules:</p>
 
-                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Introduction to UI/UX Design </p>
+                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Introduction to Product Design </p>
 
                                         <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Getting the Right Tools</p>
 
                                         <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Design Thinking</p>
 
-                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Design System </p>
+                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Building a Design System </p>
 
-                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Projects </p>
+                                        <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Adobe XD Deep Dive </p>
 
                                         <p className="cardSubTitle text-justify"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Assessment </p>
 

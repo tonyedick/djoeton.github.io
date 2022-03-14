@@ -6,6 +6,9 @@ import Footer from '../components/Footer/Footer'
 import TopNavigation from '../components/TopNavigation/TopNavigation'
 
 class AboutPage extends Component {
+  componentDidMount(){
+      window.scroll(0,0)
+  }
   render() {
     return (
       
