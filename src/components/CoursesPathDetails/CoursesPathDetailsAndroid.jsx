@@ -52,7 +52,7 @@ class CoursesPathDetailsAndroid extends Component {
                         </Row>
                         
                         <Row>
-                            <Col className="mt-5" lg={8} md={6} sm={12}>
+                            <Col className="mt-5 requirements" lg={8} md={6} sm={12}>
                                 <div>
                                     <h1 className="androidDetailsText">Requirements</h1>
                                     <p className="pathName">This is your first step to becoming a professional UI/UX designer. Get industry experience when you learn from Top Professionals in the industry alongside students from over 150 countries.</p>
@@ -64,7 +64,7 @@ class CoursesPathDetailsAndroid extends Component {
 
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
 
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Ligula cur maecenass</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Ligula cur maecenass</li>
 
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
 
@@ -73,15 +73,15 @@ class CoursesPathDetailsAndroid extends Component {
                                     <ul>
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Introduction to Programming</li>
                                         
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Getting the Right Tools</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Getting the Right Tools</li>
 
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Kotlin</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Kotlin</li>
 
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Building our first Android App</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Building our first Android App</li>
 
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Project</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Project</li>
 
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Assessment</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Assessment</li>
 
                                     </ul>
 

@@ -16,7 +16,7 @@ class Footer extends Component {
           <Container fluid={true} className="footerSection">
               <Row>
                   <Col lg={4} md={6} sm={12} className="p-3 text-justify">
-                      <img src={whiteLogo} />
+                      <img src={whiteLogo} alt=""/>
                       <p className="footerDescription">We are the leading TECH Education<br></br>
                       company in Sub-Saharan Africa that helps<br></br>
                       people learn premium technology skills<br></br>
@@ -26,10 +26,10 @@ class Footer extends Component {
 
                   <Col lg={2} md={3} sm={12} className="p-5 text-justify">
                   <h2 className="footerName">PROGRAMS</h2>
-                  <a className="footerLink" href="#">Enterprise </a><br></br>
-                  <a className="footerLink" href="#">Be A Trainer </a><br></br>
-                  <a className="footerLink" href="#">Scholarship </a><br></br>
-                  <a className="footerLink" href="#">Business Network </a><br></br>
+                  <Link className="footerLink" href="#">Enterprise </Link><br></br>
+                  <Link className="footerLink" href="#">Be A Trainer </Link><br></br>
+                  <Link className="footerLink" href="#">Scholarship </Link><br></br>
+                  <Link className="footerLink" href="#">Business Network </Link><br></br>
                   </Col>
 
                   <Col lg={2} md={3} sm={12} className="p-5 text-justify">
@@ -37,19 +37,19 @@ class Footer extends Component {
                   <Link className="footerLink" to="/about">About Us </Link><br></br>
                   <Link className="footerLink" to="/careers">Career </Link><br></br>
                   <Link className="footerLink" to="/contact">Contact Us </Link><br></br>
-                  <a className="footerLink" href="#">Affiliate </a><br></br>
+                  <Link className="footerLink" href="#">Affiliate </a><br></br>
                   </Col>
                   
                   <Col lg={2} md={3} sm={12} className="p-5 text-justify">
                   <h2 className="footerName">RESOURCES</h2>
-                  <a className="footerLink" href="#">Blog </a><br></br>
-                  <a className="footerLink" href="#">Events </a><br></br>
+                  <Link className="footerLink" href="#">Blog </Link><br></br>
+                  <Link className="footerLink" href="#">Events </Link><br></br>
                   <Link className="footerLink" to="/faq">FAQs </Link><br></br>
                   </Col>
 
                   <Col lg={2} md={3} sm={12} className="p-5 text-justify">
                   <h2 className="footerName">CONTACT</h2>
-                  <p className="footerDescription">
+                  <p className="footerDescription">Iwo, Osun State, Nigeria
                   <FontAwesomeIcon icon={faEnvelope} /> info@sojilearn<br></br>
                   <FontAwesomeIcon icon={faPhone} /> 8137806643
                   </p>
@@ -59,13 +59,13 @@ class Footer extends Component {
               <Row>
                   <Col lg={3} md={6} sm={12} className="p-2 text-center">
                         <div className="social-container">
-                          <a className="facebook social" href="#">
+                          <Link className="facebook social" href="#">
                               <FontAwesomeIcon icon={faFacebook} size="2x" />
-                          </a>
-                          <a  className="youtube social" href="#">
-                              <FontAwesomeIcon icon={faYoutube} size="2x" /></a>
-                          <a  className="twitter social" href="#">
-                              <FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+                          </Link>
+                          <Link  className="youtube social" href="#">
+                              <FontAwesomeIcon icon={faYoutube} size="2x" /></Link>
+                          <Link  className="twitter social" href="#">
+                              <FontAwesomeIcon icon={faTwitter} size="2x" /></Link>
                         </div>
                   </Col>
                   <Col lg={2} md={6} sm={12} className="p-4 text-center copyrightLink footerMore">
@@ -78,7 +78,7 @@ class Footer extends Component {
                     <Link className="footerMore" to="/privacypolicy">Privacy Policy </Link>
                   </Col>
                   <Col lg={3} md={6} sm={12} className="p-4 text-center">
-                    <a className="copyrightLink2" href="#"> (c) 2022 SojiLearn. All right Reserved</a>
+                    <Link className="copyrightLink2" href="#"> (c) 2022 SojiLearn. All right Reserved</Link>
                   </Col>
                 <hr className="divider"/>
               </Row>

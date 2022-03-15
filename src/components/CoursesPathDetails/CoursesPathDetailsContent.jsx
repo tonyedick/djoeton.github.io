@@ -52,10 +52,10 @@ class CoursesPathDetailsContent extends Component {
                         </Row>
                         
                         <Row>
-                            <Col className="mt-5" lg={8} md={6} sm={12}>
+                            <Col className="mt-5 requirements" lg={8} md={6} sm={12}>
                                 <div>
                                     <h1 className="androidDetailsText">Requirements</h1>
-                                    <p className="pathName">This is your first step to becoming a professional COntent Writer. Get industry experience when you learn from Top Professionals in the industry alongside students from over 150 countries.</p>
+                                    <p className="pathName">This is your first step to becoming a professional Content Writer. Get industry experience when you learn from Top Professionals in the industry alongside students from over 150 countries.</p>
                                     <hr />
                                     <ul>
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
@@ -64,7 +64,7 @@ class CoursesPathDetailsContent extends Component {
 
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
 
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Ligula cur maecenass</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Ligula cur maecenass</li>
 
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
 
@@ -73,15 +73,15 @@ class CoursesPathDetailsContent extends Component {
                                     <ul>
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Introduction to Content Writing</li>
                                         
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Online resources</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Online resources</li>
 
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Story telling foundation</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Story telling foundation</li>
 
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Content Writing Deep Dive</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Content Writing Deep Dive</li>
 
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Project</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Project</li>
 
-                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />Assessment</li>
+                                        <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Assessment</li>
 
                                     </ul>
 

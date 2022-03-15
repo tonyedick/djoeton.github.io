@@ -603,3 +603,6 @@ a.twitter{
      font-size: 22px;
      position: relative;
 } 
+.requirements ul li{
+    list-style: none;
+}
