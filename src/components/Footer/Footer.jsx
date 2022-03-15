@@ -37,7 +37,7 @@ class Footer extends Component {
                   <Link className="footerLink" to="/about">About Us </Link><br></br>
                   <Link className="footerLink" to="/careers">Career </Link><br></br>
                   <Link className="footerLink" to="/contact">Contact Us </Link><br></br>
-                  <Link className="footerLink" href="#">Affiliate </a><br></br>
+                  <Link className="footerLink" href="#">Affiliate </Link><br></br>
                   </Col>
                   
                   <Col lg={2} md={3} sm={12} className="p-5 text-justify">
