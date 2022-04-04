@@ -17,7 +17,7 @@ class CoursesPathDetailsUI extends Component {
                 <Fragment>
                    <Container className="mt-5">
                    <Row>
-                                <Col lg={8} md={6} sm={12}>     
+                                <Col lg={8} md={6} sm={12}>
                                     <h1 className="coursePathsText">Become a Professional UI/UX Designer.</h1>
                                     <img className="androidDetaisImg" src="https://solverwp.com/demo/html/edumint/assets/img/course/9.png" alt=""/>
                                     <br></br> <br></br>
@@ -39,18 +39,18 @@ class CoursesPathDetailsUI extends Component {
 
                                                     <li><FontAwesomeIcon className="iconBullent" icon={faTags} /> <span>Tags:</span> Android, JavaScript, Programming, Kotlin</li>
 
-                                                    <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> <span>Instructor:</span> Kazi Ariyan</li>
+                                                    <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> <span>Instructor:</span> Jeremiah Giyang</li>
 
                                                     </ul>
                                             <div class="price-wrap text-center">
                                             <h5>Price:<span>$54.00</span></h5>
                                             <Button variant="primary">ENROLL COURSE</Button>
                                             </div>
-                                            </div> 
-                              
+                                            </div>
+
                                 </Col>
                         </Row>
-                        
+
                         <Row>
                             <Col className="mt-5 requirements" lg={8} md={6} sm={12}>
                                 <div>
@@ -59,7 +59,7 @@ class CoursesPathDetailsUI extends Component {
                                     <hr />
                                     <ul>
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
-                                        
+
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Ligula cur maecenas</li>
 
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
@@ -72,7 +72,7 @@ class CoursesPathDetailsUI extends Component {
                                     <p className="pathName">Lesson Modules Includes:</p>
                                     <ul>
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Introduction to UI/UX Design</li>
-                                        
+
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Getting the Right Tools</li>
 
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Design Thinking</li>
@@ -95,7 +95,7 @@ class CoursesPathDetailsUI extends Component {
                                             </Player>
                             </Col>
 
-                           
+
                         </Row>
 
                    </Container>

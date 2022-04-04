@@ -17,7 +17,7 @@ class CoursesPathDetailsProd extends Component {
                 <Fragment>
                    <Container className="mt-5">
                    <Row>
-                                <Col lg={8} md={6} sm={12}>     
+                                <Col lg={8} md={6} sm={12}>
                                     <h1 className="coursePathsText">Become a Professional Product Designer.</h1>
                                     <img className="androidDetaisImg" src="https://solverwp.com/demo/html/edumint/assets/img/course/9.png" alt=""/>
                                     <br></br> <br></br>
@@ -46,20 +46,20 @@ class CoursesPathDetailsProd extends Component {
                                             <h5>Price:<span>$54.00</span></h5>
                                             <Button variant="primary">ENROLL COURSE</Button>
                                             </div>
-                                            </div> 
-                              
+                                            </div>
+
                                 </Col>
                         </Row>
-                        
+
                         <Row>
                             <Col className="mt-5 requirements" lg={8} md={6} sm={12}>
                                 <div>
                                     <h1 className="androidDetailsText">Requirements</h1>
-                                    <p className="pathName">This is your first step to becoming a professional COntent Writer. Get industry experience when you learn from Top Professionals in the industry alongside students from over 150 countries.</p>
+                                    <p className="pathName">This is your first step to becoming a professional Product Designer. Get industry experience when you learn from Top Professionals in the industry alongside students from over 150 countries.</p>
                                     <hr />
                                     <ul>
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
-                                        
+
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Ligula cur maecenas</li>
 
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Metus interdum metus</li>
@@ -72,7 +72,7 @@ class CoursesPathDetailsProd extends Component {
                                     <p className="pathName">Lesson Modules Includes:</p>
                                     <ul>
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Introduction to Product Design</li>
-                                        
+
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Getting the Right Tools</li>
 
                                         <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Design Thinking</li>
@@ -95,7 +95,7 @@ class CoursesPathDetailsProd extends Component {
                                             </Player>
                             </Col>
 
-                           
+
                         </Row>
 
                    </Container>
