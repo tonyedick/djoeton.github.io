@@ -17,7 +17,7 @@ class AppUrl {
     static Stories = this.BaseURL+'/stories';
     static HomeVideo = this.BaseURL+'/home/video';
     static HomeTotal = this.BaseURL+'/hometotal';
-    static HomepageTitle = this.BaseURL+'/homepage/title';
+    static HomepageTitle = this.BaseURL+'/homepage/title0000';
     static HomepageWelcome = this.BaseURL+'/homepage/welcome';
     static HomeFirstImg = this.BaseURL+'/home/firstimg';
     static HomeSecondImg = this.BaseURL+'/home/secondimg';
