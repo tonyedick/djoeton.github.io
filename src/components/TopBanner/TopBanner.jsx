@@ -10,8 +10,8 @@ class TopBanner extends Component {
     constructor(){
         super();
         this.state={
-            title:"",
-            subtitle:""
+            title:".....",
+            subtitle:"....."
         }
     }
     componentDidMount(){

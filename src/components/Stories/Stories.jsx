@@ -3,10 +3,39 @@ import { Col, Container, Row } from 'react-bootstrap';
 import codingIcon from '../../asset/image/coding.png';
 import onlineIcon from '../../asset/image/online.png';
 import professionalIcon from '../../asset/image/professional.png';
-
+import RestClient from '../../RestAPI/RestClient';
+import AppUrl from '../../RestAPI/AppUrl';
 
 class Stories extends Component {
+
+    constructor(){
+        super();
+        this.state={
+            storiesData:[]
+        }
+    }
+    componentDidMount(){
+        RestClient.GetRequest(AppUrl.Stories).then(result=>{
+            this.setState({storiesData:result});
+        });
+
+    }
+
   render() {
+
+    const MyList = this.state.storiesData;
+    const MyView = MyList.map(MyList=>{
+
+        return <Col lg={4} md={6} sm={12}>
+        <div className="storiesCard text-center">
+            <img className="codingIcon" src={MyList.stories_logo} alt="stories photos"/>
+            <h2 className="storiesName">{MyList.stories_name}</h2>
+            <p className="storiesDescription">{MyList.stories_description}</p>
+        </div>
+        </Col>
+        
+    })
+
     return (
         <Fragment>
 
@@ -15,29 +44,7 @@ class Stories extends Component {
                     <div className="bottom"></div>
                     <p className="storiesMainPar">By engaging enough raw talents from the streets, we believe there will be an influx of new products and Tech solutions that will address the needs of remote areas, thus driving innovations from the graceroots.</p>
                 <Row>
-                    <Col lg={4} md={6} sm={12}>
-                    <div className="storiesCard text-center">
-                        <img className="codingIcon" src={codingIcon} />
-                        <h2 className="storiesName">Virtual Learning</h2>
-                        <p className="storiesDescription">With access to over 150 courses in Tech, start learning from the convenience of your living room.</p>
-                    </div>
-                    </Col>
-
-                    <Col lg={4} md={6} sm={12}>
-                    <div className="storiesCard text-center">
-                    <img className="onlineIcon" src={onlineIcon} />
-                        <h2 className="storiesName">Tech Training Kiosks</h2>
-                        <p className="storiesDescription">Easily Accessible Centres/Hubs for Tech Training and Pratical Coding Classes.</p>
-                    </div>
-                    </Col>
-
-                    <Col lg={4} md={6} sm={12}>
-                    <div className="storiesCard text-center">
-                    <img className="professionalIcon" src={professionalIcon} />
-                        <h2 className="storiesName">From Professionals</h2>
-                        <p className="storiesDescription">Learn with divers network of technology professionals and see how to make a difference through Tech.</p>
-                    </div>
-                    </Col>
+                        {MyView}
                 </Row>
             </Container>
         </Fragment>
