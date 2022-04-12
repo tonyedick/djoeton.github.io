@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
-import RestClient from '../../RestAPI/RestClient';
-import AppUrl from '../../RestAPI/AppUrl';
+import RestClient from '../../RestAPI/RestClient'
+import AppUrl from '../../RestAPI/AppUrl'
 
 class Modules extends Component {
     

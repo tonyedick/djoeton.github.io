@@ -27,19 +27,19 @@ class Welcome extends Component {
                                     <Container className="text-center mt-5">
                                         <Row>
                                             <Col lg={4} md={6} sm={12}>
-                                                <img src={pageOne} />
+                                                <img src={pageOne} alt=""/>
                                                 <h1 className="introName">Flexible Payment</h1>
                                                 <p className="storiesDescription">You can choose from multiple payment plans</p>
                                             </Col>
 
                                             <Col lg={4} md={6} sm={12}>
-                                            <img src={pageTwo} />
+                                            <img src={pageTwo} alt=""/>
                                             <h1 className="introName">Learn on-the-go</h1>
                                             <p className="storiesDescription">Switch between device and continue learning</p>
                                             </Col>
 
                                             <Col lg={4} md={6} sm={12}>
-                                            <img src={pageThree} />
+                                            <img src={pageThree} alt=""/>
                                             <h1 className="introName">Globally Recognized</h1>
                                             <p className="storiesDescription">Our partners are majorly from the US and United Kingdom</p>
                                             </Col>
@@ -50,7 +50,7 @@ class Welcome extends Component {
                                         <Col lg={4} md={6} sm={12}>
                                             <Row>
                                                 <Col lg={6} md={6} sm={12}>
-                                                <img className="sideImg" src={imgone} />
+                                                <img className="sideImg" src={imgone} alt=""/>
                                                 </Col>
 
                                                 <Col lg={6} md={6} sm={12}>
@@ -63,7 +63,7 @@ class Welcome extends Component {
                                         <Col lg={4} md={6} sm={12}>
                                             <Row>
                                                 <Col lg={6} md={6} sm={12}>
-                                                <img className="sideImg" src={imgtwo} />
+                                                <img className="sideImg" src={imgtwo} alt=""/>
                                                 </Col>
 
                                                 <Col lg={6} md={6} sm={12}>
@@ -76,7 +76,7 @@ class Welcome extends Component {
                                         <Col lg={4} md={6} sm={12}>
                                             <Row>
                                                 <Col lg={6} md={6} sm={12}>
-                                                <img className="sideImg" src={imgthree} />
+                                                <img className="sideImg" src={imgthree} alt=""/>
                                                 </Col>
 
                                                 <Col lg={6} md={6} sm={12}>

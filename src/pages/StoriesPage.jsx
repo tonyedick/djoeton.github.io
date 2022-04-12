@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import Footer from '../components/Footer/Footer'
 import PageTop from '../components/PageTop/PageTop'
 import TopNavigation from '../components/TopNavigation/TopNavigation'
-import AllStories from '../components/AllStories/AllStories'
+import Stories from '../components/Stories/Stories'
 import Contact from '../components/Contact/Contact'
 import Summary from '../components/Summary/Summary'
 
@@ -15,7 +15,7 @@ class StoriesPage extends Component {
       <Fragment>
         <TopNavigation title="Our Story" />
         <PageTop pagetitle="Our Story" />
-        <AllStories />
+        <Stories />
         <br></br>
         <br></br>
         <Summary />

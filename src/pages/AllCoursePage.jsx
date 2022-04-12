@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
-import AllCourses from '../components/AllCourses/AllCourses'
+import Courses from '../components/Courses/Courses'
+import Modules from '../components/Modules/Modules'
 import Footer from '../components/Footer/Footer'
 import PageTop from '../components/PageTop/PageTop'
 import TopNavigation from '../components/TopNavigation/TopNavigation'
@@ -14,7 +15,8 @@ class AllCoursePage extends Component {
       <Fragment>
         <TopNavigation title="Our Courses"/>
         <PageTop pagetitle="All Courses" />
-        <AllCourses />
+        <Courses />
+        <Modules />
         <Footer />
       </Fragment>
     )

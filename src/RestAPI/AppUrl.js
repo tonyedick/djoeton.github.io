@@ -26,6 +26,9 @@ class AppUrl {
     static HomeSecondIcon = this.BaseURL+'/home/secondicon';
     static HomeThirdIcon = this.BaseURL+'/home/thirdicon';
     static HomeTech = this.BaseURL+'/hometech';
+    static About = this.BaseURL+'/about';
+    static StoriesPage = this.BaseURL+'/storiespage';
+    static Academy = this.BaseURL+'/academypage';
 
 
 
