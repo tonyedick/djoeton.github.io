@@ -2,26 +2,27 @@ import axios from 'axios';
 
 class RestClient {
 
-     static GetRequest = (getUrl)=>{
-          return axios.get(getUrl).then(response=>{
+     static GetRequest = async (getUrl)=>{
+          try {
+               const response = await axios.get(getUrl);
                return response.data;
-          }).catch(error=>{
+          } catch (error) {
                return null;
-          });
+          }
      }
 
-     static PostRequest = (postUrl,postJson)=>{
+     static PostRequest = async (postUrl,postJson)=>{
           let config={
                headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 }
           }
-//          RestClient.PostRequest(AppUrl.ContactUs,JSON.stringify(jsonObject)
-          return axios.post(postUrl,postJson,config).then(response=>{
+             try {
+               const response = await axios.post(postUrl, postJson, config);
                return response.data;
-          }).catch(error=>{
+          } catch (error) {
                return null;
-          });
+          }
      }
 
 }
