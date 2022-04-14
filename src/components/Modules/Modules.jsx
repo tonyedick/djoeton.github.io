@@ -13,7 +13,7 @@ class Modules extends Component {
         }
     }
     componentDidMount(){
-        RestClient.GetRequest(AppUrl.HomeModules).then(result=>{
+        RestClient.GetRequest(AppUrl.AllModules).then(result=>{
             this.setState({modulesData:result});
         });
 

@@ -1,13 +1,11 @@
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import bak from '../../asset/image/bak.webp'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser'
 
 class AboutDescription extends Component {
 
-    
     constructor(){
         super();
         this.state={
@@ -18,13 +16,12 @@ class AboutDescription extends Component {
             who_we_are:"",
             our_mission:"",
             our_vision:""
-
         }
     }
 
     componentDidMount(){
-        RestClient.GetRequest(AppUrl.About).then(result=>{
-        this.setState({
+        RestClient.GetRequest(AppUrl.AboutData).then(result=>{
+            this.setState({
             intro:result[0]['intro'],
             sub_title:result[0]['sub_title'],
             long_description:result[0]['long_description'],

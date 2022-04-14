@@ -1,10 +1,47 @@
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Form, Row,Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope, faExternalLink} from '@fortawesome/free-solid-svg-icons'
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
+import RestClient from '../../RestAPI/RestClient'
+import AppUrl from '../../RestAPI/AppUrl'
 
 class Contact extends Component {
+
+    constructor(){
+        super();
+        this.state={
+          address:"",
+          email:"",
+          phone:""
+        }
+    }
+    
+    componentDidMount(){
+        RestClient.GetRequest(AppUrl.FooterData).then(result=>{
+            this.setState({
+            address:result[0]['address'],
+            email:result[0]['email'],
+            phone:result[0]['phone']
+                });
+            })
+    }
+
+    contactus(){
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+        //alert(name+"/"+email+"/"+message);
+
+        let jsonObject = {name:name,email:email,message:message}
+        RestClient.PostRequest(AppUrl.ContactUs,JSON.stringify(jsonObject)
+            ).then(result=>{
+                alert(result);
+            }).catch(error=>{
+                alert("Error");
+            })
+    }
+
     render() {
         return (
           
@@ -16,20 +53,20 @@ class Contact extends Component {
                         <Form>
                         <Form.Group className="mb-3">
                             <Form.Label>Your Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter Your Name" />
+                            <Form.Control id="name" type="text" placeholder="Enter Your Name" />
                         </Form.Group>
     
                         <Form.Group className="mb-3">
                             <Form.Label>Your Email</Form.Label>
-                            <Form.Control type="email" placeholder="Enter Your Email" />
+                            <Form.Control id="email" type="email" placeholder="Enter Your Email" />
                         </Form.Group>
     
                         <Form.Group className="mb-3">
                             <Form.Label>Message</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
+                            <Form.Control id="message" as="textarea" rows={3} />
                         </Form.Group>
     
-                        <Button variant="warning" type="submit">
+                        <Button onClick={this.contactus} variant="warning">
                             Submit
                         </Button>
                         </Form>
@@ -37,10 +74,9 @@ class Contact extends Component {
     
                     <Col lg={6} md={6} sm={12}>
                         <h1 className="storiesName">Discuss Now</h1>
-                        <p className="analysisDescription">
-                        Across 5 major cities: Enugu | Port Harcourt | Jos | Lagos | Abuja, Nigeria<br></br>
-                      <FontAwesomeIcon icon={faEnvelope} /> info@sojilearn.com<br></br>
-                      <FontAwesomeIcon icon={faPhone} /> 8137806643 | 8152742646
+                        <p className="analysisDescription">{this.state.address}<br></br>
+                      <FontAwesomeIcon icon={faEnvelope} /> {this.state.email}<br></br>
+                      <FontAwesomeIcon icon={faPhone} /> {this.state.phone}
                       </p>
                     </Col>
                 </Row>
