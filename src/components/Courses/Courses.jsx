@@ -30,7 +30,7 @@ class Courses extends Component {
                     <Card.Text>
                     {MyList.course_description}
                     </Card.Text>
-                    <p className="coursesReadMore"><Link to={"/coursedetails"+MyList.id}>Read more..</Link></p>
+                    <p className="coursesReadMore"><Link to={"/coursedetails/"+MyList.id}>Read more..</Link></p>
                 </Card.Body>
                 </Card>
             </Col>
