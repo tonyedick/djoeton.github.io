@@ -2,9 +2,9 @@ import React, { Component, Fragment } from 'react'
 import Footer from '../components/Footer/Footer'
 import PageTop from '../components/PageTop/PageTop'
 import TopNavigation from '../components/TopNavigation/TopNavigation'
-import CoursesPathDetailsAndroid from '../components/CoursesPathDetails/CoursesPathDetailsAndroid'
+import CoursesDetails from '../components/CoursesDetails/CoursesDetails'
 
-class CoursesPathPage extends Component {
+class CoursesDetailsPage extends Component {
   componentDidMount(){
     window.scroll(0,0)
 }
@@ -12,13 +12,13 @@ class CoursesPathPage extends Component {
     return (
         
         <Fragment>
-            <TopNavigation title="Android Development School" />
-            <PageTop pagetitle="Android Development"/>
-            <CoursesPathDetailsAndroid />
+            <TopNavigation title="Enroll" />
+            <PageTop pagetitle="Course Details"/>
+            <CoursesDetails />
             <Footer />
         </Fragment>
     )
   }
 }
 
-export default CoursesPathPage
+export default CoursesDetailsPage

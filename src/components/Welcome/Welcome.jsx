@@ -23,7 +23,7 @@ class Welcome extends Component {
                                  learning community
                                     </h2> 
 
-
+                                    
                                     <Container className="text-center mt-5">
                                         <Row>
                                             <Col lg={4} md={6} sm={12}>

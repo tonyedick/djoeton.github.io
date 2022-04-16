@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import Footer from '../components/Footer/Footer'
 import PageTop from '../components/PageTop/PageTop'
 import TopNavigation from '../components/TopNavigation/TopNavigation'
-import CoursesPathDetailsData from '../components/CoursesPathDetails/CoursesPathDetailsData'
+import CoursesPathDetailsData from '../components/CoursesDetails/CoursesPathDetailsData'
 
 class CoursesPathPage extends Component {
   componentDidMount(){

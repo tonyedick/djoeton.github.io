@@ -43,11 +43,7 @@ componentDidMount(){
         facebook:result[0]['facebook'],
         youtube:result[0]['youtube'],
         twitter:result[0]['twitter'],
-        footer_credit:result[0]['footer_credit'],
-        about:result[0]['about'],
-        career:result[0]['career'],
-        contact:result[0]['contact'],
-        affiliate:result[0]['affiliate']
+        footer_credit:result[0]['footer_credit']
             });
         })
       RestClient.GetRequest(AppUrl.FooterInformation).then(result=>{

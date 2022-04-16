@@ -31,9 +31,8 @@ class Contact extends Component {
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let message = document.getElementById("message").value;
-        //alert(name+"/"+email+"/"+message);
-
-       let jsonObject = {name:name,email:email,message:message}
+    
+        let jsonObject = {name:name,email:email,message:message}
         RestClient.PostRequest(AppUrl.ContactUs,JSON.stringify(jsonObject)
             ).then(result=>{
                 alert(result);
