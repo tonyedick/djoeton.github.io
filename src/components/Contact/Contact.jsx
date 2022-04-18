@@ -5,6 +5,7 @@ import {faEnvelope, faExternalLink} from '@fortawesome/free-solid-svg-icons'
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
+import Loading from '../Loading/Loading'
 
 class Contact extends Component {
 
@@ -13,7 +14,8 @@ class Contact extends Component {
         this.state={
           address:"",
           email:"",
-          phone:""
+          phone:"",
+          loading:true
         }
     }
     
@@ -22,7 +24,8 @@ class Contact extends Component {
             this.setState({
             address:result[0]['address'],
             email:result[0]['email'],
-            phone:result[0]['phone']
+            phone:result[0]['phone'],
+            loading:false
                 });
             })
     }
@@ -42,6 +45,12 @@ class Contact extends Component {
     }
 
     render() {
+        
+
+    if(this.state.loading === true){
+        return <Loading />
+    }
+    else{
         return (
           
           <Fragment>
@@ -83,6 +92,7 @@ class Contact extends Component {
     
           </Fragment>
         )
+        }// end else
       }
     }
 export default Contact

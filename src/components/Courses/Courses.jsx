@@ -3,22 +3,31 @@ import { Card, Col, Container, Row } from 'react-bootstrap'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import RestClient from '../../RestAPI/RestClient';
 import AppUrl from '../../RestAPI/AppUrl';
+import Loading from '../Loading/Loading';
 
 class Courses extends Component {
 
     constructor(){
         super();
         this.state={
-            coursesData:[]
+            coursesData:[],
+            loading:true
         }
     }
     componentDidMount(){
         RestClient.GetRequest(AppUrl.AllCourses).then(result=>{
-            this.setState({coursesData:result});
-        });
+            this.setState({coursesData:result,loading:false});
+        })
 
     }
   render() {
+
+    if(this.state.loading === true){
+        return <Loading />
+    }
+    else{
+
+
 
     const MyList = this.state.coursesData;
     const MyView = MyList.map(MyList=>{
@@ -47,6 +56,7 @@ class Courses extends Component {
             </Container>
         </Fragment>    
     )
+    }//end else
   }
 }
 

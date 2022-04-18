@@ -3,7 +3,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser'
+import Loading from '../Loading/Loading'
 
 class Analysis extends Component {
 
@@ -11,21 +12,28 @@ class Analysis extends Component {
                 super();
                 this.state={
                     data:[],
-                    techdesc:".."
+                    techdesc:"..",
+                    loading:true
                 }
             }
 
         componentDidMount(){
             RestClient.GetRequest(AppUrl.ChartData).then(result=>{
-            this.setState({data:result});
+            this.setState({data:result,loading:false});
                 });
             RestClient.GetRequest(AppUrl.HomeTech).then(result=>{
-            this.setState({techdesc:result[0]['tech_description']});
+            this.setState({techdesc:result[0]['tech_description'],loading:false});
                 });
 
             }
   render() {
       var blue = "#000221"
+
+      if(this.state.loading === true){
+        return <Loading />
+    }
+    else{
+
     return (
         <Fragment>
             <Container>
@@ -58,6 +66,7 @@ class Analysis extends Component {
 
         </Fragment>
         )
+    }// end else
   }
 }
 

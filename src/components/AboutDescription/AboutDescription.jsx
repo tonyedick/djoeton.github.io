@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
 import ReactHtmlParser from 'react-html-parser'
+import Loading from '../Loading/Loading'
 
 class AboutDescription extends Component {
 
@@ -15,7 +16,8 @@ class AboutDescription extends Component {
             small_img:"",
             who_we_are:"",
             our_mission:"",
-            our_vision:""
+            our_vision:"",
+            loading:true
         }
     }
 
@@ -28,13 +30,19 @@ class AboutDescription extends Component {
             small_img:result[0]['small_img'],
             who_we_are:result[0]['who_we_are'],
             our_mission:result[0]['our_mission'],
-            our_vision:result[0]['our_vision']
+            our_vision:result[0]['our_vision'],loading:false
 
                 });
             })
         }
 
   render() {
+
+    if(this.state.loading === true){
+        return <Loading />
+    }
+    else{
+
     return (
         <Fragment>
               <Container className="text-center">
@@ -73,8 +81,8 @@ class AboutDescription extends Component {
                 </Row>
             </Container>
         </Fragment>
-      
     )
+    }// end else
   }
 }
 

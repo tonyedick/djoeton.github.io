@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
 import ReactHtmlParser from 'react-html-parser'
+import Loading from '../Loading/Loading'
 
 
 class PrivacyDescription extends Component {
@@ -11,20 +12,26 @@ class PrivacyDescription extends Component {
   constructor(){
     super();
     this.state={
-      privacy_policy:""
+      privacy_policy:"",
+      loading:true
     }
 }
 
 componentDidMount(){
     RestClient.GetRequest(AppUrl.FooterData).then(result=>{
         this.setState({
-          privacy_policy:result[0]['privacy_policy']
+          privacy_policy:result[0]['privacy_policy'],loading:false
 
             });
         })
     }
 
   render() {
+    if(this.state.loading === true){
+      return <Loading />
+  }
+  else{
+
     return (
       
       <Fragment>
@@ -35,6 +42,7 @@ componentDidMount(){
           </Container>
       </Fragment>
     )
+  }//end else
   }
 }
 

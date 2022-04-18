@@ -3,22 +3,30 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
+import Loading from '../Loading/Loading'
 
 class Modules extends Component {
     
     constructor(){
         super();
         this.state={
-            modulesData:[]
+            modulesData:[],
+            loading:true
         }
     }
     componentDidMount(){
         RestClient.GetRequest(AppUrl.AllModules).then(result=>{
-            this.setState({modulesData:result});
+            this.setState({modulesData:result,loading:false});
         });
 
     }
   render() {
+      
+    if(this.state.loading === true){
+        return <Loading />
+    }
+    else{
+
 
     const MyList = this.state.modulesData;
     const MyView = MyList.map(MyList=>{
@@ -51,6 +59,7 @@ class Modules extends Component {
 
         </Fragment>
         )
+    }// end else
   }
 }
 

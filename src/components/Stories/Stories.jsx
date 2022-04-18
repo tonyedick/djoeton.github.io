@@ -3,25 +3,32 @@ import { Col, Container, Row } from 'react-bootstrap';
 import codingIcon from '../../asset/image/coding.png';
 import onlineIcon from '../../asset/image/online.png';
 import professionalIcon from '../../asset/image/professional.png';
-import RestClient from '../../RestAPI/RestClient';
-import AppUrl from '../../RestAPI/AppUrl';
+import RestClient from '../../RestAPI/RestClient'
+import AppUrl from '../../RestAPI/AppUrl'
+import Loading from '../Loading/Loading'
 
 class Stories extends Component {
 
     constructor(){
         super();
         this.state={
-            storiesData:[]
+            storiesData:[],
+            loading:true
         }
     }
     componentDidMount(){
         RestClient.GetRequest(AppUrl.Stories).then(result=>{
-            this.setState({storiesData:result});
+            this.setState({storiesData:result,loading:false});
         });
 
     }
 
   render() {
+
+    if(this.state.loading === true){
+        return <Loading />
+    }
+    else{
 
     const MyList = this.state.storiesData;
     const MyView = MyList.map(MyList=>{
@@ -49,6 +56,7 @@ class Stories extends Component {
             </Container>
         </Fragment>
         )
+    }// end else
   }
 }
 
