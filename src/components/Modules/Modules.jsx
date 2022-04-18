@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
 import Loading from '../Loading/Loading'
+import Errorpage from '../404Page/Errorpage'
 
 class Modules extends Component {
     
@@ -11,13 +12,22 @@ class Modules extends Component {
         super();
         this.state={
             modulesData:[],
-            loading:true
+            loading:true,
+            error:false
         }
     }
     componentDidMount(){
         RestClient.GetRequest(AppUrl.AllModules).then(result=>{
+
+            if(result === null){
+                this.setState({error:true,loading:false})
+            }else{
+
             this.setState({modulesData:result,loading:false});
-        });
+            }
+        }).catch(error=>{
+            this.setState({error:true})
+        })
 
     }
   render() {
@@ -25,7 +35,7 @@ class Modules extends Component {
     if(this.state.loading === true){
         return <Loading />
     }
-    else{
+    else if(this.state.loading === false){
 
 
     const MyList = this.state.modulesData;
@@ -60,6 +70,9 @@ class Modules extends Component {
         </Fragment>
         )
     }// end else
+    else if(this.state.error === true){
+        return <Errorpage />
+    }// end if for error
   }
 }
 

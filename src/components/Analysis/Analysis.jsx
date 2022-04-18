@@ -4,7 +4,7 @@ import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
 import ReactHtmlParser from 'react-html-parser'
-import Loading from '../Loading/Loading'
+import Slide from 'react-reveal/Slide'
 
 class Analysis extends Component {
 
@@ -12,27 +12,21 @@ class Analysis extends Component {
                 super();
                 this.state={
                     data:[],
-                    techdesc:"..",
-                    loading:true
+                    techdesc:".."
                 }
             }
 
         componentDidMount(){
             RestClient.GetRequest(AppUrl.ChartData).then(result=>{
-            this.setState({data:result,loading:false});
+            this.setState({data:result});
                 });
             RestClient.GetRequest(AppUrl.HomeTech).then(result=>{
-            this.setState({techdesc:result[0]['tech_description'],loading:false});
+            this.setState({techdesc:result[0]['tech_description']});
                 });
 
             }
   render() {
       var blue = "#000221"
-
-      if(this.state.loading === true){
-        return <Loading />
-    }
-    else{
 
     return (
         <Fragment>
@@ -55,7 +49,9 @@ class Analysis extends Component {
                     
                     <Col lg={6} md={12} sm={12}>
                     <p className="analysisDescription text-justify">
+                    <Slide right>
                     { ReactHtmlParser(this.state.techdesc)}
+                    </Slide>
                     </p>
                     </Col>
                 </Row>
@@ -66,7 +62,6 @@ class Analysis extends Component {
 
         </Fragment>
         )
-    }// end else
   }
 }
 

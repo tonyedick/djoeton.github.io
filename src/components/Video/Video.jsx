@@ -6,7 +6,8 @@ import 'video-react/dist/video-react.css'
 import { Player, BigPlayButton } from 'video-react'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser'
+import Slide from 'react-reveal/Slide'
 
 class Video extends Component {
 
@@ -24,8 +25,6 @@ class Video extends Component {
         this.setState({
             video_description:result[0]['video_description'],
             video_url:result[0]['video_url']
-
-
                 });
             })
         }
@@ -43,7 +42,9 @@ class Video extends Component {
                 <Row>
                 <Col lg={6} md={6} sm={12} className="videoText">
                         <p className="storiesDescription">
+                        <Slide left>
                         {ReactHtmlParser(this.state.video_description)}
+                        </Slide>
                         </p>
                     </Col>                    
                     

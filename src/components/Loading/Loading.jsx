@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import React, { Component, Fragment } from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 import LoadingIcon from '../../asset/image/loader.svg'
 
 class Loading extends Component {

@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
-import axios from 'axios';
-import RestClient from '../../RestAPI/RestClient';
-import AppUrl from '../../RestAPI/AppUrl';
+import axios from 'axios'
+import RestClient from '../../RestAPI/RestClient'
+import AppUrl from '../../RestAPI/AppUrl'
+import Jump from 'react-reveal/Jump'
 
 class TopBanner extends Component {
 
@@ -11,7 +12,7 @@ class TopBanner extends Component {
         super();
         this.state={
             title:".....",
-            subtitle:"....."
+            subtitle:".....",
         }
     }
     componentDidMount(){
@@ -24,6 +25,7 @@ class TopBanner extends Component {
 
     }
   render() {
+
     return (
             <Fragment>
                 <Container fluid={true} className="topFixedBanner p-0">
@@ -31,9 +33,11 @@ class TopBanner extends Component {
                 <Container className="topContent">
                     <Row>
                         <Col className="text-center">
+                            <Jump>
                             <h2 className="topTitle">{this.state.title}</h2>
                             <p className="topSubTitle">{this.state.subtitle}</p>
                             <Button className="button" type="button" variant="warning" size="md">Get Started</Button>
+                            </Jump>
                         </Col>
                     </Row>
 

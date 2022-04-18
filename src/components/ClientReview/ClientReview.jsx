@@ -5,23 +5,32 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
+import Loading from '../Loading/Loading'
 
 class ClientReview extends Component {
 
   constructor(){
     super();
     this.state={
-        reviewData:[]
+        reviewData:[],
+        loading:true
     }
 }
 componentDidMount(){
     RestClient.GetRequest(AppUrl.ClientReview).then(result=>{
-        this.setState({reviewData:result});
+        this.setState({reviewData:result,loading:false});
     });
 
 }
 
   render() {
+
+    if(this.state.loading === true){
+      return <Loading />
+  }
+  else{
+
+
     
     var settings = {
         autoPlaySpeed:3000,
@@ -96,6 +105,7 @@ componentDidMount(){
         </Fragment>
 
         )
+    }//end else
   }
 }
 

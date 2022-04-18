@@ -6,6 +6,7 @@ import professionalIcon from '../../asset/image/professional.png';
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
 import Loading from '../Loading/Loading'
+import Errorpage from '../404Page/Errorpage'
 
 class Stories extends Component {
 
@@ -13,13 +14,24 @@ class Stories extends Component {
         super();
         this.state={
             storiesData:[],
-            loading:true
+            loading:true,
+            error:false
         }
     }
     componentDidMount(){
         RestClient.GetRequest(AppUrl.Stories).then(result=>{
+
+            if(result === null){
+                this.setState({error:true,loading:false})
+            }else{
+
             this.setState({storiesData:result,loading:false});
-        });
+            }
+        }).catch(error=>{
+            this.setState({error:true})
+        })
+
+        
 
     }
 
@@ -28,7 +40,7 @@ class Stories extends Component {
     if(this.state.loading === true){
         return <Loading />
     }
-    else{
+    else if(this.state.loading === false){
 
     const MyList = this.state.storiesData;
     const MyView = MyList.map(MyList=>{
@@ -57,6 +69,9 @@ class Stories extends Component {
         </Fragment>
         )
     }// end else
+    else if(this.state.error === true){
+        return <Errorpage />
+    }// end if for error
   }
 }
 

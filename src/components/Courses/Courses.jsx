@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
-import RestClient from '../../RestAPI/RestClient';
-import AppUrl from '../../RestAPI/AppUrl';
-import Loading from '../Loading/Loading';
+import RestClient from '../../RestAPI/RestClient'
+import AppUrl from '../../RestAPI/AppUrl'
+import Loading from '../Loading/Loading'
+import Errorpage from '../404Page/Errorpage'
 
 class Courses extends Component {
 
@@ -11,12 +12,21 @@ class Courses extends Component {
         super();
         this.state={
             coursesData:[],
-            loading:true
+            loading:true,
+            error:false
         }
     }
     componentDidMount(){
         RestClient.GetRequest(AppUrl.AllCourses).then(result=>{
+
+            if(result === null){
+                this.setState({error:true,loading:false})
+            }else{
+
             this.setState({coursesData:result,loading:false});
+            }
+        }).catch(error=>{
+            this.setState({error:true})
         })
 
     }
@@ -25,7 +35,7 @@ class Courses extends Component {
     if(this.state.loading === true){
         return <Loading />
     }
-    else{
+    else if(this.state.loading === false){
 
 
 
@@ -57,6 +67,9 @@ class Courses extends Component {
         </Fragment>    
     )
     }//end else
+     else if(this.state.error === true){
+        return <Errorpage />
+    }// end if for error
   }
 }
 
