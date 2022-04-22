@@ -5,31 +5,23 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
-import Loading from '../Loading/Loading'
 
 class ClientReview extends Component {
 
   constructor(){
     super();
     this.state={
-        reviewData:[],
-        loading:true
+        reviewData:[]
     }
 }
 componentDidMount(){
     RestClient.GetRequest(AppUrl.ClientReview).then(result=>{
-        this.setState({reviewData:result,loading:false});
-    });
+        this.setState({reviewData:result});
+    })
 
 }
 
   render() {
-
-    if(this.state.loading === true){
-      return <Loading />
-  }
-  else{
-
 
     
     var settings = {
@@ -105,7 +97,6 @@ componentDidMount(){
         </Fragment>
 
         )
-    }//end else
   }
 }
 

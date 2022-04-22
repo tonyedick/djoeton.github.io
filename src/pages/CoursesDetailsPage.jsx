@@ -6,8 +6,9 @@ import CoursesDetails from '../components/CoursesDetails/CoursesDetails'
 import RestClient from '../RestAPI/RestClient'
 import AppUrl from '../RestAPI/AppUrl'
 
+
 class CoursesDetailsPage extends Component {
-  
+
   constructor({match}){
     super();
     this.state={
@@ -17,14 +18,14 @@ class CoursesDetailsPage extends Component {
 }
   componentDidMount(){
     window.scroll(0,0)
-  
-        RestClient.GetRequest(AppUrl.CourseDetails+this.state.MyCourseId).then(result=>{
+
+        RestClient.GetRequest(AppUrl.CoursesDetails+this.state.MyCourseId).then(result=>{
             this.setState({CourseData:result});
             })
 }
   render() {
     return (
-        
+
         <Fragment>
             <TopNavigation title="Enroll" />
             <PageTop pagetitle="Course Details"/>
