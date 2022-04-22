@@ -1,8 +1,8 @@
 class AppUrl {
 
 
-    static BaseURL = 'http://127.0.0.1:8000/api';
-   // static BaseURL = 'https://sojilearn.eggheadsintlschool.com/api';
+    //static BaseURL = 'http://127.0.0.1:8000/api';
+    static BaseURL = 'https://sojilearn.eggheadsintlschool.com/api';
 
     static ChartData = this.BaseURL+'/chartdata';
     static ClientReview = this.BaseURL+'/clientreview';

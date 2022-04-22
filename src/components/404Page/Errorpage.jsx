@@ -9,7 +9,7 @@ class Errorpage extends Component {
             <Container className="text-center">
                 <Row>
                     <Col>
-                    <img className="errorImage" src={error} alt=""/>
+                      <img className="errorImage" src={error} alt=""/>
                     </Col>
                 </Row>
             </Container>
