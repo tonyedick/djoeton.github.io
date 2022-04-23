@@ -34,24 +34,24 @@ class TopNavigation extends Component {
   render() {
     return (
 
-<Fragment>
-<title>{this.state.pageTitle}</title>
-<Navbar className={this.state.navBarBack} collapseOnSelect fixed="top" expand="lg" variant={this.state.navVariant}>
-  <Navbar.Brand className={this.state.navBarTitle} href="/"><img src={this.state.navBarLogo} alt="logo" /></Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="me-auto">
-    </Nav>
-    <Nav>
-      <Nav.Link><NavLink exact activeStyle={{color:'#ffa550'}} className={this.state.navBarItem} to="/">HOME</NavLink></Nav.Link>
-      <Nav.Link><NavLink exact activeStyle={{color:'#ffa550'}} className={this.state.navBarItem} to="/about">ABOUT</NavLink></Nav.Link>
-      <Nav.Link><NavLink exact activeStyle={{color:'#ffa550'}} className={this.state.navBarItem} to="/schools">SCHOOLS</NavLink></Nav.Link>
-      <Nav.Link><NavLink exact activeStyle={{color:'#ffa550'}} className={this.state.navBarItem} to="/stories">STORIES</NavLink></Nav.Link>
-      <Nav.Link><NavLink exact activeStyle={{color:'#ffa550'}} className={this.state.navBarItem} to="/contact">CONTACT US</NavLink></Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>
-        </Fragment>
+          <Fragment>
+              <title>{this.state.pageTitle}</title>
+              <Navbar className={this.state.navBarBack} collapseOnSelect fixed="top" expand="lg" variant={this.state.navVariant}>
+                <Navbar.Brand className={this.state.navBarTitle} href="/"><img src={this.state.navBarLogo} alt="logo" /></Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                  <Nav className="me-auto">
+                  </Nav>
+                  <Nav>
+                    <Nav.Link><NavLink exact activeStyle={{color:"#ffa500"}} className={this.state.navBarItem} to="/">HOME</NavLink></Nav.Link>
+                    <Nav.Link><NavLink exact activeStyle={{color:"#ffa500"}} className={this.state.navBarItem} to="/about">ABOUT</NavLink></Nav.Link>
+                    <Nav.Link><NavLink exact activeStyle={{color:"#ffa500"}} className={this.state.navBarItem} to="/schools">SCHOOLS</NavLink></Nav.Link>
+                    <Nav.Link><NavLink exact activeStyle={{color:"#ffa500"}} className={this.state.navBarItem} to="/stories">STORIES</NavLink></Nav.Link>
+                    <Nav.Link><NavLink exact activeStyle={{color:"#ffa500"}} className={this.state.navBarItem} to="/contact">CONTACT US</NavLink></Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Navbar>
+          </Fragment>
     )
   }
 }
