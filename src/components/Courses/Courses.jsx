@@ -60,6 +60,7 @@ class Courses extends Component {
             <Container>
             <h1 className="coursesMainTitle">CHOOSE A PATH</h1>
             <div className="coursesBottom"></div>
+                
                 <Row>
                    {MyView}
                 </Row>

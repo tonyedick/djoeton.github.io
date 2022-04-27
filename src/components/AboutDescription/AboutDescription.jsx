@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
 import ReactHtmlParser from 'react-html-parser'
+import Slide from 'react-reveal/Slide'
 
 class AboutDescription extends Component {
 
@@ -45,18 +46,18 @@ class AboutDescription extends Component {
             <Container>
                 <Row>
                     <Col lg={6} md={12} sm={12}>
-            
+                    <Slide left>
                         <h1 className="aboutSignTitle">{this.state.sub_title}</h1>
-                   
-       
+                    </Slide>
+                    <Slide left>
                         <p className="storiesDescription text-justify">{ReactHtmlParser(this.state.long_description)}</p>
-           
+                    </Slide>
                     </Col>
 
                     <Col lg={6} md={12} sm={12}>
-            
+                        <Slide right>
                         <img className="aboutCard" src={this.state.small_img} alt="" />
-
+                        </Slide>
                     </Col>
                 </Row>
             </Container>

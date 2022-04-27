@@ -4,6 +4,7 @@ import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
 import ReactHtmlParser from 'react-html-parser'
+import Slide from 'react-reveal/Slide'
 
 class Analysis extends Component {
 
@@ -47,9 +48,11 @@ class Analysis extends Component {
                     </Col>
                     
                     <Col lg={6} md={12} sm={12}>
+                    <Slide right>
                     <p className="analysisDescription text-justify">
                     { ReactHtmlParser(this.state.techdesc)}
                     </p>
+                    </Slide>
                     </Col>
                 </Row>
             </Container>

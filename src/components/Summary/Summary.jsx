@@ -6,6 +6,7 @@ import {faLaptop} from '@fortawesome/free-solid-svg-icons'
 import {faStar} from '@fortawesome/free-solid-svg-icons'
 import CountUp  from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
+import Jump from 'react-reveal/Jump'
 
 class Summary extends Component {
   render() {
@@ -19,6 +20,7 @@ class Summary extends Component {
                                 <Row className="countSection">
                                     <Col>
                                         <FontAwesomeIcon className="iconProject" icon={faGlobe} />
+                                        <Jump>
                                         <h1 className="countNumber">
                                         <CountUp start={0} end={1080}>
                                         {({ countUpRef, start }) => (
@@ -28,11 +30,13 @@ class Summary extends Component {
                                         )}
                                         </CountUp>
                                         </h1>
+                                        </Jump>
                                         <h4 className="countTitle">Students Worldwide</h4>
                                     </Col>
 
                                     <Col>
                                         <FontAwesomeIcon className="iconProject" icon={faLaptop} />
+                                        <Jump>
                                         <h1 className="countNumber">
                                         <CountUp start={0} end={82}>
                                         {({ countUpRef, start }) => (
@@ -42,11 +46,13 @@ class Summary extends Component {
                                         )}
                                         </CountUp>
                                         </h1>
+                                        </Jump>
                                         <h4 className="countTitle">Courses Published</h4>
                                     </Col>
 
                                     <Col>
                                         <FontAwesomeIcon className="iconProject" icon={faStar} />
+                                        <Jump>
                                         <h1 className="countNumber">
                                          <CountUp start={0} end={120}>
                                         {({ countUpRef, start }) => (
@@ -56,6 +62,7 @@ class Summary extends Component {
                                         )}
                                         </CountUp>
                                         </h1>
+                                        </Jump>
                                         <h4 className="countTitle">Student Reviews </h4>
                                     </Col>
                                 </Row>

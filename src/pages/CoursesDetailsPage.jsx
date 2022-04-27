@@ -21,7 +21,7 @@ class CoursesDetailsPage extends Component {
 
         RestClient.GetRequest(AppUrl.CoursesDetails+this.state.MyCourseId).then(result=>{
             this.setState({CourseData:result});
-            })
+            }) 
 }
   render() {
     return (

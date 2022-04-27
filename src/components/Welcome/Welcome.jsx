@@ -9,6 +9,7 @@ import imgthree from '../../asset/image/21.png'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
 import ReactHtmlParser from 'react-html-parser'
+import Jump from 'react-reveal/Jump'
 
 class Welcome extends Component {
 
@@ -105,27 +106,27 @@ class Welcome extends Component {
                                     <Container className="text-center mt-5">
                                         <Row>
                                             <Col lg={4} md={6} sm={12}>
-                                  
+                                                <Jump>
                                                 <img src={this.state.first_img} alt=""/>
                                                 <h1 className="introName">{this.state.first_title}</h1>
                                                 <p className="storiesDescription">{this.state.first_subtitle}</p>
-                                        
+                                                </Jump>
                                             </Col>
 
                                             <Col lg={4} md={6} sm={12}>
-                                      
+                                            <Jump>
                                             <img src={this.state.second_img} alt=""/>
                                             <h1 className="introName">{this.state.second_title}</h1>
                                             <p className="storiesDescription">{this.state.second_subtitle}</p>
-                           
+                                            </Jump>
                                             </Col>
 
                                             <Col lg={4} md={6} sm={12}>
-                                 
+                                            <Jump>                
                                             <img src={this.state.third_img} alt=""/>
                                             <h1 className="introName">{this.state.third_title}</h1>
                                             <p className="storiesDescription">{this.state.third_subtitle}</p>
-                            
+                                            </Jump>
                                             </Col>
                                         </Row>
 

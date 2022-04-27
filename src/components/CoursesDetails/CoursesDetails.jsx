@@ -37,7 +37,7 @@ class CoursesDetails extends Component {
             // eslint-disable-next-line eqeqeq
             if(CourseDetailsArray.length == 1){
                 ImgTwo = CourseDetailsArray[0]['img_two'];
-                ModuleFeatures = CourseDetailsArray[0]['modules_features'];
+                ModuleFeatures = CourseDetailsArray[0]['module_features'];
                 LongTitle = CourseDetailsArray[0]['long_title'];
                 LongDescription = CourseDetailsArray[0]['long_description'];
                 AllSkills = CourseDetailsArray[0]['all_skills'];

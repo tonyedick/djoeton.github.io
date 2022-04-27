@@ -7,6 +7,7 @@ import { Player, BigPlayButton } from 'video-react'
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
 import ReactHtmlParser from 'react-html-parser'
+import Jump from 'react-reveal/Jump'
 
 class Video extends Component {
 
@@ -40,13 +41,17 @@ class Video extends Component {
                     <div className="bottom"></div>
                 <Row>
                 <Col lg={6} md={6} sm={12} className="videoText">
+                        <Jump>
                         <p className="storiesDescription">
                         {ReactHtmlParser(this.state.video_description)}
                         </p>
+                        </Jump>
                     </Col>                    
                     
                     <Col lg={6} md={6} sm={12} className="text-center videoCard">
+                    <Jump>
                     <FontAwesomeIcon onClick={this.modalOpen} className="iconProject" icon={faVideoSlash} />
+                    </Jump>
                     </Col>
 
                 </Row>
