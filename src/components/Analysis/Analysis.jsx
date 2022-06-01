@@ -39,14 +39,12 @@ class Analysis extends Component {
                         <BarChart width={100} height={300} data={this.state.data}>
                         <XAxis dataKey ="Technology" />
                         <Tooltip />
-                        
                         <Bar dataKey="Expertise" fill={blue}>
-
                         </Bar>
                         </BarChart>
                         </ResponsiveContainer>
                     </Col>
-                    
+
                     <Col lg={6} md={12} sm={12}>
                     <Slide right>
                     <p className="analysisDescription text-justify">
