@@ -100,14 +100,14 @@ class Welcome extends Component {
                             <div className="intro-area-inner">
                                 <h2 className="maintitle">
                                     {ReactHtmlParser(this.state.welcome_msg)}
-                                    </h2> 
+                                    </h2>
 
-                            
+
                                     <Container className="text-center mt-5">
                                         <Row>
                                             <Col lg={4} md={6} sm={12}>
                                                 <Jump>
-                                                <img src={this.state.first_img} alt=""/>
+                                                <img className="storiesCard" src={this.state.first_img} alt=""/>
                                                 <h1 className="introName">{this.state.first_title}</h1>
                                                 <p className="storiesDescription">{this.state.first_subtitle}</p>
                                                 </Jump>
@@ -115,22 +115,22 @@ class Welcome extends Component {
 
                                             <Col lg={4} md={6} sm={12}>
                                             <Jump>
-                                            <img src={this.state.second_img} alt=""/>
+                                            <img className="storiesCard" src={this.state.second_img} alt=""/>
                                             <h1 className="introName">{this.state.second_title}</h1>
                                             <p className="storiesDescription">{this.state.second_subtitle}</p>
                                             </Jump>
                                             </Col>
 
                                             <Col lg={4} md={6} sm={12}>
-                                            <Jump>                
-                                            <img src={this.state.third_img} alt=""/>
+                                            <Jump>
+                                            <img className="storiesCard" src={this.state.third_img} alt=""/>
                                             <h1 className="introName">{this.state.third_title}</h1>
                                             <p className="storiesDescription">{this.state.third_subtitle}</p>
                                             </Jump>
                                             </Col>
                                         </Row>
 
-                                        
+
                                     <Row className="intro-footer bg-base text-center mt-5">
                                         <Col lg={4} md={6} sm={12}>
                                             <Row>
@@ -179,7 +179,7 @@ class Welcome extends Component {
                     </Col>
                 </Row>
 
-               
+
 
             </Container>
           </div>

@@ -28,10 +28,10 @@ class AppRouter extends Component {
             <Route exact path="/refund" element={<RefundPage />} />
             <Route exact path="/termsandconditions" element={<TCPage />} />
             <Route exact path="/privacypolicy" element={<PrivacyPolicyPage />} />
-            
+
             <Route exact path="/careers" element={<CareersPage />} />
             <Route exact path="/faq" element={<FaqPage />} />
-            <Route exact path="/coursedetails/:courseID" element={<CoursesDetailsPage />} />
+            <Route exact path="/coursedetails/:courseId" element={<CoursesDetailsPage />} />
 
             <Route exact path="*" element={<PageNotFound />} />
         </Routes>

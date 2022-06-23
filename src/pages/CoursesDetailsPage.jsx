@@ -6,13 +6,12 @@ import CoursesDetails from '../components/CoursesDetails/CoursesDetails'
 import RestClient from '../RestAPI/RestClient'
 import AppUrl from '../RestAPI/AppUrl'
 
-
 class CoursesDetailsPage extends Component {
 
   constructor({match}){
     super();
     this.state={
-        MyCourseId:match.params.courseID,
+        MyCourseId:match.params.courseId,
         CourseData:[]
     }
 }
@@ -21,7 +20,7 @@ class CoursesDetailsPage extends Component {
 
         RestClient.GetRequest(AppUrl.CoursesDetails+this.state.MyCourseId).then(result=>{
             this.setState({CourseData:result});
-            }) 
+            })
 }
   render() {
     return (

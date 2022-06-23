@@ -83,7 +83,7 @@
     font-weight: 500;
 }
 .bottom{
-    background: #ffa500 none repeat scroll 0 0;
+    background: rgba(60, 179, 113) none repeat scroll 0 0;
     height: 5px;
     width: 100px;
     margin: -1.9em 0;
@@ -165,13 +165,13 @@
     font-size: 40px;
 }
 .countTitle{
-    color: #ffa500;
+    color: rgba(60, 179, 113);
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 22px;
 }
 .iconBullet{
-    color: #ffa500;
+    color: rgba(60, 179, 113);
     font-size: 16px;
 }
 .iconProject{
@@ -180,18 +180,18 @@
     margin-top:12%;
 }
 .coursesReadMore{
-    color: #ffa500;
+    color: rgba(60, 179, 113);
     font-size: 12px;
 }
 .coursesReadMore a{
-    color: #ffa500;
+    color: rgba(60, 179, 113);
     text-decoration: none;
 }
 .coursesReadMore a:hover{
     color: #000221;
 }
 .coursesMainTitle{
-    color: #ffa500;
+    color: #000221;
     margin-top: 3em;
     margin-bottom: 3em;
     font-family: 'Montserrat', sans-serif;
@@ -213,7 +213,7 @@
     box-shadow: 0 13px 30px -5px rgba(245, 212, 23, 0.986);
 }
 .coursesBottom{
-    background: #000221 none repeat scroll 0 0;
+    background: rgba(60, 179, 113) none repeat scroll 0 0;
     height: 5px;
     width: 100px;
     margin: -1.9em 0;
@@ -223,10 +223,10 @@
     width: 100%;
 }
 .modulesViewMore{
-    color: #ffa500;
+    color: rgba(60, 179, 113);
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    font-weight: 600;    
+    font-weight: 600;
     text-decoration: none;
 }
 .modulesViewMore:hover{
@@ -242,9 +242,9 @@
 .videoText{
     margin-top: 2%;
 }
-.siderBack{
-    background: #ffa500;
-    min-height:400px;
+.sliderBack{
+    background-image: url("../image/2.png");
+    min-height:500px;
 }
 .reviewMainTitle{
     color: #000221;
@@ -253,6 +253,10 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: 700;
+}
+.reviewIco{
+  margin-top: 5em;
+  height: 4em;
 }
 .reviewbottom{
     background: #ffffff none repeat scroll 0 0;
@@ -272,15 +276,25 @@
     color: #000221;
     margin-top: 1em;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
+    text-align: left;
+}
+.reviewGetStarted{
+  color:rgba(60, 179, 113);
+  margin-top: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 560;
+  text-align: left;
+  margin-bottom: 2em;
 }
 .reviewDescription{
     color: #000221;
     margin-top: 1em;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
 }
 .aboutMainTitle{
     color: #000221;
@@ -293,7 +307,6 @@
 .aboutImg{
     width:350px;
     height:350px;
-    background: #ffa500;
     border-radius:50%;
     display:flex;
     align-items: flex-end;
@@ -371,7 +384,7 @@ a.twitter{
 }
 .footerLink:hover{
     text-decoration: none;
-    color:#ffa500;
+    color:rgba(60, 179, 113);
 }
 .footerMore{
     color: #ffffff;
@@ -379,7 +392,7 @@ a.twitter{
     display: inline-block;
 }
 .footerMore:hover{
-    color: #ffa500;
+    color: rgba(60, 179, 113);
     text-decoration: none;
     display: inline-block;
 }
@@ -397,7 +410,7 @@ a.twitter{
 }
 .copyrightLink:hover{
     text-decoration: none;
-    color:#ffa500;
+    color:rgba(60, 179, 113);
 }
 .copyrightLink2{
     text-decoration: none;
@@ -434,7 +447,7 @@ a.twitter{
 .topPageTitle{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #ffa500;
+    color: rgba(60, 179, 113);
     font-size: 40px;
 }
 .aboutMainPar{
@@ -482,7 +495,7 @@ a.twitter{
 .topAboutPageTitle{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #ffa500;
+    color: rgba(60, 179, 113);
     font-size: 28px;
     margin-top: 3em;
 }
@@ -520,7 +533,7 @@ a.twitter{
     border-radius: 0 0 7px 7px;
 }
 .bg-base{
-    background: #ffa500;
+    background: rgba(60, 179, 113);
 }
 .sideImg{
     margin-top: -15px;
@@ -552,7 +565,7 @@ a.twitter{
      font-family: 'Raleway',sans-serif;
      font-size: 15px;
      font-weight: 600;
- } 
+ }
  .aboutPathImg{
     width:100%;
 }
@@ -592,7 +605,7 @@ a.twitter{
     margin-right: 5px;
 }
 .widget_feature .price-wrap {
-    background-color: #ffa500;
+    background-color: rgba(60, 179, 113);
     padding: 34px 23px 40px;
 }
 .widget-title{
@@ -602,7 +615,7 @@ a.twitter{
      font-weight: 700;
      font-size: 22px;
      position: relative;
-} 
+}
 .requirements ul li{
     list-style: none;
 }
@@ -619,4 +632,97 @@ a.twitter{
     font-family: 'Montserrat',sans-serif;
     font-weight: 700;
     font-size: 50px;
+}
+.footerDescription5{
+    color: #ffffff;
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+.reviewsCard{
+    margin: 6px 2px 4px 2px;
+    height: 34em;
+    padding: 40px 20px 40px 20px;
+}
+.reviewCardBack{
+    background: rgba(60, 179, 113);
+    position: relative;
+    border-radius: 20px;
+    height: 150px;
+    width: 600px;
+    margin: -16% 2px 4px 38%;
+    margin-bottom: 3em;
+}
+@media only screen and (max-width: 1400px) {
+  .reviewCardBack {
+    background: rgba(60, 179, 113);
+    position: relative;
+    border-radius: 20px;
+    height: 150px;
+    width: 480px;
+    margin: -16% 2px 4px 32%;
+    margin-bottom: 3em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .reviewCardBack {
+    background: rgba(60, 179, 113);
+    position: relative;
+    border-radius: 20px;
+    height: 150px;
+    width: 380px;
+    margin: -16% 2px 4px 10%;
+    margin-bottom: 3em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reviewCardBack {
+    background: rgba(60, 179, 113);
+    position: relative;
+    border-radius: 20px;
+    height: 120px;
+    width: 380px;
+    margin: -16% 2px 4px 10%;
+    margin-bottom: 3em;
+  }
+}
+.subtextDescription{
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    margin-left: 2em;
+    position: absolute;
+    margin-top: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+@media only screen and (max-width: 1400px) {
+  .subtextDescription {
+    width: 100%;
+    height: auto;
+    margin-left: 2em;
+    position: absolurete;
+    margin-top: 4em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .subtextDescription {
+    margin-top: 2em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .subtextDescription {
+    margin-top: 2em;
+  }
+}
+.contactCard{
+    width: 100%;
+    height: auto;
 }

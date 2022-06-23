@@ -41,18 +41,19 @@ class Courses extends Component {
 
     const MyList = this.state.coursesData;
     const MyView = MyList.map(MyList=>{
-    return  <Col lg={4} md={6} sm={12}>
-                <Card className="coursesCard">
-                <Card.Img variant="top" src={MyList.img_one} />
-                <Card.Body>
-                    <Card.Title>{MyList.course_name}</Card.Title>
-                    <Card.Text>
-                    {MyList.course_description}
-                    </Card.Text>
-                    <p className="coursesReadMore"><Link to={"/coursedetails/"+MyList.id}>Read more..</Link></p>
-                </Card.Body>
-                </Card>
-            </Col>
+
+        return  <Col lg={4} md={6} sm={12}>
+                    <Card className="coursesCard">
+                    <Card.Img variant="top" src={MyList.img_one} />
+                    <Card.Body>
+                        <Card.Title>{MyList.course_name}</Card.Title>
+                        <Card.Text>
+                        {MyList.course_description}
+                        </Card.Text>
+                        <p className="coursesReadMore"><Link to={"/coursedetails/"+MyList.id}>Read more..</Link></p>
+                    </Card.Body>
+                    </Card>
+                </Col>
 
     })
     return (

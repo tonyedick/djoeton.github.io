@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import face from '../../asset/image/face.png'
+import four from '../../asset/image/4.png';
 import { init } from 'ityped'
 
 class AboutUs extends Component {
@@ -13,27 +14,31 @@ class AboutUs extends Component {
   render() {
     return (
             <Fragment>
-                <Container className="text-center">
-                    
-                    <h1 className="aboutMainTitle p-3">ABOUT ME</h1>
-                    <div className="reviewbottom"></div>
-                    <Row>
-                        <Col lg={6} md={6} sm={12}>
-                            <div className="aboutImg">
-                            <img className="aboutMeImg" src={face} />
-                            </div>
-                        </Col>
+                <Container fluid={true} className="aboutBanner p-0 text-center">
+                 <div className="aboutBannerOverlay" >
+                     <Container className="text=center">
+                         <Row>
+                             <Col lg={6} md={6} sm={12}>
+                                     <div class="storiesDescriptio">
+                                         <img classname="aboutMeImg" src={four} alt="img"/>
+                                     </div>
+                             </Col>
 
+                             <Col lg={6} md={6} sm={12}>
+                             <div class="about-inner-wrap">
+                                 <div class="section-title mb-0">
+                                     <h6 class="sub-title style-btn storiesMainTitle">ABOUT US</h6>
+                                     <h2 class="storiesDescriptio">120+ Courses Online from Best Tutors</h2>
+                                     <p class="content">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad</p>
+                                 </div>
+                             </div>
+                             </Col>
 
-                        <Col lg={6} md={6} sm={12}>
-                            <div className="aboutMeBody">
-                                <h2 className="aboutMeDetails">Hi There, I'm</h2>
-                                <h2 className="aboutMeTitle">Dick, Tonye</h2>
-                                <h3 className="aboutMeDetails">Work as <span id="myElement"></span></h3>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
+                         </Row>
+                      </Container>
+                 </div>
+
+                 </Container>
             </Fragment>
         )
   }

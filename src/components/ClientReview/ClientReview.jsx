@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
+import ReactHtmlParser from 'react-html-parser'
 
 class ClientReview extends Component {
 
@@ -23,16 +24,16 @@ componentDidMount(){
 
   render() {
 
-    
+
     var settings = {
-        autoPlaySpeed:3000,
+        autoPlaySpeed:2000,
         autoplay:true,
         dots: true,
         infinite: false,
-        speed: 3000,
+        speed: 1700,
         arrows:false,
-        vertical:true,
-        verticalSwiping:true,
+        horizontal:true,
+        horizontalSwiping:false,
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 1,
@@ -64,17 +65,24 @@ componentDidMount(){
         ]
       };
 
-      
+
     const MyList = this.state.reviewData;
     const MyView = MyList.map(MyList=>{
 
         return <div>
 
-              <Row className="text-center justify-content-center">
-                  <Col lg={6} md={6} sm={12}>
-                      <img className="circleImg" src={MyList.client_img} alt=""/>
+              <Row className="justify-content-center">
+                  <Col lg={4} md={6} sm={12}>
+                      <img className="reviewIco" src={MyList.icon_img} alt=""/>
                       <h2 className="reviewName">{MyList.client_title}</h2>
                       <p className="reviewDescription">{MyList.client_description}</p>
+                      <p className="reviewGetStarted">{ReactHtmlParser(MyList.get_started)}</p>
+                  </Col>
+                  <Col lg={8} md={6} sm={12}>
+                      <img className="reviewsCard" src={MyList.client_img} alt=""/>
+                      <p className="reviewCardBack">
+                        <h2 className="subtextDescription">Learn seemlessly | Build projects | Get Hired</h2>
+                      </p>
                   </Col>
               </Row>
 
@@ -84,13 +92,10 @@ componentDidMount(){
 
     return (
         <Fragment>
-            <Container fluid={true} className="siderBack text-center justify-content-center">
-
-            <h1 className="reviewMainTitle p-3">TESTIMONIAL</h1>
-                    <div className="reviewbottom"></div>
+            <Container fluid={true} className="sliderBack text-center justify-content-center">
 
                 <Slider {...settings}>
-                  {MyView}  
+                  {MyView}
 
                 </Slider>
             </Container>

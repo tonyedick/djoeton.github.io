@@ -38,9 +38,9 @@ class AboutDescription extends Component {
     return (
         <Fragment>
               <Container className="text-center">
-       
+
                 <p className="aboutMainPar">{ReactHtmlParser(this.state.intro)}</p>
-     
+
             </Container>
 
             <Container>
@@ -64,24 +64,24 @@ class AboutDescription extends Component {
             <Container className="mt-5">
                 <Row>
                     <Col sm={12} lg={12} md={12}>
-                        
+
                         <h1 className="storiesName">Who We Are</h1>
                         <hr />
-                
+
                         <p className="storiesDescription">{ReactHtmlParser(this.state.who_we_are)}</p>
-                    
+
 
                         <h1 className="storiesName">Our Mission</h1>
                         <hr />
-                    
+
                         <p className="storiesDescription">{ReactHtmlParser(this.state.our_mission)}</p>
-                        
-                        
+
+
                         <h1 className="storiesName">Our Vision</h1>
                         <hr />
-                    
+
                         <p className="storiesDescription">{ReactHtmlParser(this.state.our_vision)}</p>
-                        
+
                     </Col>
                 </Row>
             </Container>

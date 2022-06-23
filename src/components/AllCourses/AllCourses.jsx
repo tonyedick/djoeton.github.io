@@ -114,7 +114,7 @@ class AllCourses extends Component {
                                 <h5 className="text-justify storiesName">Digital Marketing</h5>
                                 <p className="text-justify storiesDescription">With this starter course, you will learn the foundational concepts
                                     used to build simple static websites.</p>
-                                    <Link className="modulesViewMore float-left" to="/coursepathdigital" >View Details</Link>
+                                    <Link className="modulesViewMore float-left" to="#" >View Details</Link>
                               </Col>
 
                             <Col lg={6} md={6} sm={12} className="p-2">
@@ -125,7 +125,7 @@ class AllCourses extends Component {
                                 <h5 className="text-justify storiesName">UI/UX</h5>
                                 <p className="text-justify storiesDescription">With this starter course, you will learn the foundational concepts
                                     used to build simple static websites.</p>
-                                    <Link className="modulesViewMore float-left" to="/coursepathui" >View Details</Link>
+                                    <Link className="modulesViewMore float-left" to="#" >View Details</Link>
                                 </Col>
                         </Row>
                     </Col>
@@ -140,7 +140,7 @@ class AllCourses extends Component {
                                 <h5 className="text-justify storiesName">Content Writing</h5>
                                 <p className="text-justify storiesDescription">With this starter course, you will learn the foundational concepts
                                     used to build simple static websites.</p>
-                                    <Link className="modulesViewMore float-left" to="/coursepathcontent" >View Details</Link>
+                                    <Link className="modulesViewMore float-left" to="#" >View Details</Link>
                               </Col>
 
                             <Col lg={6} md={6} sm={12} className="p-2">
@@ -151,7 +151,7 @@ class AllCourses extends Component {
                                 <h5 className="text-justify storiesName">Mobile Dev.</h5>
                                 <p className="text-justify storiesDescription">With this starter course, you will learn the foundational concepts
                                     used to build simple static websites.</p>
-                                    <Link className="modulesViewMore float-left" to="/coursepathandroid" >View Details</Link>
+                                    <Link className="modulesViewMore float-left" to="#" >View Details</Link>
                                 </Col>
                         </Row>
                     </Col>
@@ -166,7 +166,7 @@ class AllCourses extends Component {
                                 <h5 className="text-justify storiesName">Product Design</h5>
                                 <p className="text-justify storiesDescription">With this starter course, you will learn the foundational concepts
                                     used to build simple static websites.</p>
-                                    <Link className="modulesViewMore float-left" to="/coursepathprod" >View Details</Link>
+                                    <Link className="modulesViewMore float-left" to="#" >View Details</Link>
                               </Col>
 
                             <Col lg={6} md={6} sm={12} className="p-2">
@@ -177,7 +177,7 @@ class AllCourses extends Component {
                                 <h5 className="text-justify storiesName">Software Dev.</h5>
                                 <p className="text-justify storiesDescription">With this starter course, you will learn the foundational concepts
                                     used to build simple static websites.</p>
-                                    <Link className="modulesViewMore float-left" to="/coursepathdev" >View Details</Link>
+                                    <Link className="modulesViewMore float-left" to="#" >View Details</Link>
                                 </Col>
                         </Row>
                     </Col>
@@ -192,7 +192,7 @@ class AllCourses extends Component {
                                 <h5 className="text-justify storiesName">MS Excel</h5>
                                 <p className="text-justify storiesDescription">With this starter course, you will learn the foundational concepts
                                     used to build simple static websites.</p>
-                                    <Link className="modulesViewMore float-left" to="/coursepath" >View Details</Link>
+                                    <Link className="modulesViewMore float-left" to="#" >View Details</Link>
                               </Col>
 
                             <Col lg={6} md={6} sm={12} className="p-2">
@@ -203,7 +203,7 @@ class AllCourses extends Component {
                                 <h5 className="text-justify storiesName">Graphic Design</h5>
                                 <p className="text-justify storiesDescription">With this starter course, you will learn the foundational concepts
                                     used to build simple static websites.</p>
-                                    <Link className="modulesViewMore float-left" to="/coursepath" >View Details</Link>
+                                    <Link className="modulesViewMore float-left" to="#" >View Details</Link>
                                 </Col>
                         </Row>
                     </Col>

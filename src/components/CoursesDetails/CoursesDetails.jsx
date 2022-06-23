@@ -53,17 +53,17 @@ class CoursesDetails extends Component {
 
             return(
                 <Fragment>
-                   <Container className="mt-5">                        
+                   <Container className="mt-5">
                         <Row>
-                                <Col lg={8} md={6} sm={12}>     
+                                <Col lg={8} md={6} sm={12}>
                                     <h1 className="coursePathsText">{LongTitle}</h1>
                                     <img className="androidDetaisImg" src={ImgTwo} alt=""/>
                                     <br></br> <br></br>
                                     <p className="CourseallDescription">
-                                    Join fellow students like you and kick start your career in the Top 10% Career Jobs of the Future, when you register with SojiLearn. Course Modules.    
+                                    Join fellow students like you and kick start your career in the Top 10% Career Jobs of the Future, when you register with SojiLearn. Course Modules.
                                     </p>
                                 </Col>
-                                
+
                                 <Col lg={4} md={6} sm={12}>
                                         <div className="widget_feature">
                                         <h4 className="widget-title text-center">Features</h4>
@@ -86,11 +86,11 @@ class CoursesDetails extends Component {
                                             <h5>Price:<span>{CoursePrice}</span></h5>
                                             <Button variant="primary">ENROLL COURSE</Button>
                                             </div>
-                                            </div> 
-                              
+                                            </div>
+
                                 </Col>
                         </Row>
-                        
+
                         <Row>
                             <Col className="mt-5 requirements" lg={8} md={6} sm={12}>
                                 <div>
@@ -113,9 +113,9 @@ class CoursesDetails extends Component {
                                             </Player>
                             </Col>
 
-                           
+
                         </Row>
-                        
+
                     </Container>
 
                 </Fragment>

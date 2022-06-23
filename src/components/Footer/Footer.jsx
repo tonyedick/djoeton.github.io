@@ -1,11 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import whiteLogo from '../../asset/image/logo_white.png'
 import {faFacebook} from '@fortawesome/free-brands-svg-icons'
 import {faYoutube} from '@fortawesome/free-brands-svg-icons'
 import {faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
+import {faHome} from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
 import RestClient from '../../RestAPI/RestClient'
 import AppUrl from '../../RestAPI/AppUrl'
@@ -81,7 +83,7 @@ componentDidMount(){
                   <Link className="footerLink" to="/contact">{this.state.contact}</Link><br></br>
                   <a className="footerLink" href="/">{this.state.affiliate}</a><br></br>
                   </Col>
-                  
+
                   <Col lg={2} md={3} sm={12} className="p-5 text-justify">
                   <h2 className="footerName">RESOURCES</h2>
                   <Link className="footerLink" to="/">Blog</Link><br></br>
@@ -91,9 +93,10 @@ componentDidMount(){
 
                   <Col lg={2} md={3} sm={12} className="p-5 text-justify">
                   <h2 className="footerName">CONTACT</h2>
-                  <p className="footerDescription">{this.state.address}<br></br>
-                  <FontAwesomeIcon icon={faEnvelope} />{this.state.email}<br></br>
-                  <FontAwesomeIcon icon={faPhone} />{this.state.phone}
+                  <p className="footerDescription5">
+                  <FontAwesomeIcon icon={faHome} /> {this.state.address}<br></br>
+                  <FontAwesomeIcon icon={faEnvelope} /> {ReactHtmlParser(this.state.email)}<br></br>
+                  <FontAwesomeIcon icon={faPhone} /> {ReactHtmlParser(this.state.phone)}
                   </p>
                   </Col>
                   <hr className="divider"/>
