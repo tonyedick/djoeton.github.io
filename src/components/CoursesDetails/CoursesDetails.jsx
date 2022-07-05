@@ -60,7 +60,7 @@ class CoursesDetails extends Component {
                                     <img className="androidDetaisImg" src={ImgTwo} alt=""/>
                                     <br></br> <br></br>
                                     <p className="CourseallDescription">
-                                    Join fellow students like you and kick start your career in the Top 10% Career Jobs of the Future, when you register with SojiLearn. Course Modules.
+                                    Join fellow students like you and kick start your career in the Top 10% Career Jobs of the Future, when you register with SojiLearn.
                                     </p>
                                 </Col>
 

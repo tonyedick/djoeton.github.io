@@ -50,7 +50,7 @@ class Modules extends Component {
                     <Col lg={6} md={6} sm={12}>
                         <h5 className="text-justify storiesName">{MyList.short_title}</h5>
                         <p className="text-justify storiesDescription">{MyList.short_description}</p>
-                            <Link className="modulesViewMore float-left" to="/coursepathdigital" >View Details</Link>
+                            <Link className="modulesViewMore float-left" to="#" >View Details</Link>
                     </Col>
                 </Row>
             </Col>

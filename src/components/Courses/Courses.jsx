@@ -50,7 +50,7 @@ class Courses extends Component {
                         <Card.Text>
                         {MyList.course_description}
                         </Card.Text>
-                        <p className="coursesReadMore"><Link to={"/coursedetails/"+MyList.id}>Read more..</Link></p>
+                        <p className="coursesReadMore"><Link to={"/coursedetails/"+MyList.id+"/"+MyList.course_name}>Read more..</Link></p>
                     </Card.Body>
                     </Card>
                 </Col>
@@ -61,12 +61,12 @@ class Courses extends Component {
             <Container>
             <h1 className="coursesMainTitle">CHOOSE A PATH</h1>
             <div className="coursesBottom"></div>
-                
+
                 <Row>
                    {MyView}
                 </Row>
             </Container>
-        </Fragment>    
+        </Fragment>
     )
     }//end else
      else if(this.state.error === true){

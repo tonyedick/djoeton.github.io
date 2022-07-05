@@ -1,17 +1,21 @@
 import React, { Component, Fragment } from 'react'
+import { withRouter } from 'react-router'
 import Footer from '../components/Footer/Footer'
 import PageTop from '../components/PageTop/PageTop'
 import TopNavigation from '../components/TopNavigation/TopNavigation'
 import CoursesDetails from '../components/CoursesDetails/CoursesDetails'
 import RestClient from '../RestAPI/RestClient'
 import AppUrl from '../RestAPI/AppUrl'
+import { useParams } from 'react-router-dom'
 
 class CoursesDetailsPage extends Component {
 
-  constructor({match}){
+  constructor(){
     super();
     this.state={
-        MyCourseId:match.params.courseId,
+        courseID:useParams(),
+        MyCourseId:useParams.courseId,
+        CoursePassedName:useParams.courseName,
         CourseData:[]
     }
 }
@@ -27,7 +31,7 @@ class CoursesDetailsPage extends Component {
 
         <Fragment>
             <TopNavigation title="Enroll" />
-            <PageTop pagetitle="Course Details"/>
+            <PageTop pagetitle={this.state.CourseName} />
             <CoursesDetails courseallData={this.state.CourseData} />
             <Footer />
         </Fragment>

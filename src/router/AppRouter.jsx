@@ -12,7 +12,7 @@ import PrivacyPolicyPage from '../pages/PrivacyPolicyPage'
 import CareersPage from '../pages/CareersPage'
 import FaqPage from '../pages/FaqPage'
 import CoursesDetailsPage from '../pages/CoursesDetailsPage'
-import PageNotFound from '../pages/PageNotFound';
+import PageNotFound from '../pages/PageNotFound'
 
 class AppRouter extends Component {
   render() {
@@ -31,8 +31,7 @@ class AppRouter extends Component {
 
             <Route exact path="/careers" element={<CareersPage />} />
             <Route exact path="/faq" element={<FaqPage />} />
-            <Route exact path="/coursedetails/:courseId" element={<CoursesDetailsPage />} />
-
+            <Route exact path="/coursedetails/:courseId/:courseName" element={<CoursesDetailsPage />} />
             <Route exact path="*" element={<PageNotFound />} />
         </Routes>
       </Fragment>
